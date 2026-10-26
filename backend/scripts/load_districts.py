@@ -30,6 +30,7 @@ PROVINCES = {
 PROVINCE_OF = {district: province for province, names in PROVINCES.items() for district in names}
 
 CREATE_TABLE = """
+CREATE EXTENSION IF NOT EXISTS postgis;
 CREATE TABLE IF NOT EXISTS districts (
     code      TEXT PRIMARY KEY,
     name      TEXT NOT NULL UNIQUE,

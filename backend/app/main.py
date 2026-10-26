@@ -1,4 +1,7 @@
+from pathlib import Path
+
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy.exc import SQLAlchemyError
 
 from app.db import check_database
@@ -56,3 +59,10 @@ def indicator(code: str) -> dict:
     if result is None:
         raise HTTPException(status_code=404, detail=f"Unknown indicator: {code}")
     return result
+
+
+# In production the built React app is served from the same address as the API.
+# Locally, run "npm run dev" in frontend/ instead; this folder only exists after a build.
+FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
+if FRONTEND_DIST.is_dir():
+    app.mount("/", StaticFiles(directory=FRONTEND_DIST, html=True), name="frontend")

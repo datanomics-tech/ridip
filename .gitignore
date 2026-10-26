@@ -234,3 +234,5 @@ data/processed/*
 node_modules/
 dist/
 
+
+*.tsbuildinfo

@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from sqlalchemy.exc import SQLAlchemyError
 
 from app.db import check_database
+from app.districts import get_districts_geojson
 
 app = FastAPI(
     title="RIDIP API",
@@ -24,3 +25,12 @@ def health_db() -> dict:
     except SQLAlchemyError:
         raise HTTPException(status_code=503, detail="Database unavailable")
     return {"status": "ok", **versions}
+
+
+@app.get("/api/districts")
+def districts() -> dict:
+    """Rwanda's 30 districts as GeoJSON, for the map."""
+    try:
+        return get_districts_geojson()
+    except SQLAlchemyError:
+        raise HTTPException(status_code=503, detail="District data unavailable")

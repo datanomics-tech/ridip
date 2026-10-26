@@ -24,7 +24,7 @@ html, body, #root { height: 100%; margin: 0; }
 .brand { font-weight: 800; font-size: 22px; letter-spacing: 0.04em; }
 .tagline { color: #bfd7ea; font-size: 14px; }
 
-.content { flex: 1; display: grid; grid-template-columns: 1fr 320px; min-height: 0; }
+.content { flex: 1; display: grid; grid-template-columns: 1fr 340px; min-height: 0; }
 .map-panel { position: relative; min-height: 360px; }
 .map { height: 100%; width: 100%; }
 
@@ -51,3 +51,23 @@ html, body, #root { height: 100%; margin: 0; }
   .side-panel { border-left: 0; border-top: 1px solid var(--line); }
   .tagline { display: none; }
 }
+
+/* Stage 4: poverty profile and ranking */
+.big-number { font-size: 44px; font-weight: 800; color: var(--navy); margin: 4px 0 8px !important; line-height: 1; }
+.muted { color: var(--muted); font-size: 14px; }
+.facts { margin: 0 0 16px; display: grid; gap: 2px; }
+.facts dt { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.facts dd { margin: 0; font-weight: 600; }
+.source a { color: var(--muted); }
+
+.ranking { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
+.side-panel .ranking button {
+  width: 100%; display: grid; grid-template-columns: 96px 1fr 46px; align-items: center; gap: 8px;
+  border: 0; border-radius: 4px; padding: 3px 4px; font-weight: 400; font-size: 13px; text-align: left;
+  background: transparent; color: var(--text);
+}
+.side-panel .ranking button:hover { background: var(--bg); }
+.side-panel .ranking button.active { background: #e8eef6; font-weight: 700; }
+.bar-track { height: 10px; background: var(--bg); border-radius: 2px; overflow: hidden; }
+.bar { display: block; height: 100%; }
+.rank-value { text-align: right; font-variant-numeric: tabular-nums; }

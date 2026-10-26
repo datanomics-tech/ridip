@@ -1,38 +1,34 @@
 import type { Feature, Geometry } from "geojson";
 import type { Layer, LeafletMouseEvent, PathOptions } from "leaflet";
 import { GeoJSON, MapContainer, TileLayer } from "react-leaflet";
+import { colourFor } from "./scale";
 import type { DistrictCollection, DistrictProperties } from "./types";
 
 type MapFeature = Feature<Geometry, DistrictProperties>;
 
-// One colour per province, so the five provinces are easy to tell apart.
-export const PROVINCE_COLOURS: Record<string, string> = {
-  "City of Kigali": "#0B2545",
-  Eastern: "#1565C0",
-  Northern: "#00838F",
-  Southern: "#2E7D32",
-  Western: "#6A1B9A",
-};
-
 type Props = {
   districts: DistrictCollection;
+  values: Record<string, number>;
   selected: string | null;
   onSelect: (code: string) => void;
 };
 
-export default function DistrictMap({ districts, selected, onSelect }: Props) {
+export default function DistrictMap({ districts, values, selected, onSelect }: Props) {
   const style = (feature?: MapFeature): PathOptions => {
-    const isSelected = feature?.properties.code === selected;
+    const code = feature?.properties.code ?? "";
+    const isSelected = code === selected;
     return {
-      color: isSelected ? "#FAD201" : "#FFFFFF",
+      color: isSelected ? "#0B2545" : "#FFFFFF",
       weight: isSelected ? 4 : 1.2,
-      fillColor: PROVINCE_COLOURS[feature?.properties.province ?? ""] ?? "#888888",
-      fillOpacity: isSelected ? 0.85 : 0.55,
+      fillColor: colourFor(values[code]),
+      fillOpacity: 0.85,
     };
   };
 
   const onEachFeature = (feature: MapFeature, layer: Layer) => {
-    layer.bindTooltip(`${feature.properties.name} (${feature.properties.province})`, { sticky: true });
+    const value = values[feature.properties.code];
+    const label = value === undefined ? "no data" : `${value.toFixed(1)}% poor`;
+    layer.bindTooltip(`<strong>${feature.properties.name}</strong><br>${label}`, { sticky: true });
     layer.on({
       click: (e: LeafletMouseEvent) => {
         onSelect(feature.properties.code);
@@ -47,7 +43,12 @@ export default function DistrictMap({ districts, selected, onSelect }: Props) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <GeoJSON key={selected ?? "none"} data={districts} style={style} onEachFeature={onEachFeature} />
+      <GeoJSON
+        key={`${selected ?? "none"}-${Object.keys(values).length}`}
+        data={districts}
+        style={style}
+        onEachFeature={onEachFeature}
+      />
     </MapContainer>
   );
 }

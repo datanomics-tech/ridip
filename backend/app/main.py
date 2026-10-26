@@ -3,11 +3,12 @@ from sqlalchemy.exc import SQLAlchemyError
 
 from app.db import check_database
 from app.districts import get_districts_geojson
+from app.indicators import get_indicator, list_indicators
 
 app = FastAPI(
     title="RIDIP API",
     description="Rwanda Integrated Data Intelligence Platform",
-    version="0.1.0",
+    version="0.2.0",
 )
 
 
@@ -34,3 +35,24 @@ def districts() -> dict:
         return get_districts_geojson()
     except SQLAlchemyError:
         raise HTTPException(status_code=503, detail="District data unavailable")
+
+
+@app.get("/api/indicators")
+def indicators() -> list[dict]:
+    """The indicators that have been loaded."""
+    try:
+        return list_indicators()
+    except SQLAlchemyError:
+        raise HTTPException(status_code=503, detail="Indicator data unavailable")
+
+
+@app.get("/api/indicators/{code}")
+def indicator(code: str) -> dict:
+    """One indicator's values by year, nationally and for each district."""
+    try:
+        result = get_indicator(code)
+    except SQLAlchemyError:
+        raise HTTPException(status_code=503, detail="Indicator data unavailable")
+    if result is None:
+        raise HTTPException(status_code=404, detail=f"Unknown indicator: {code}")
+    return result

@@ -1,16 +1,34 @@
 # Seed data
 
-Small, published tables that RIDIP loads into the database. These files are committed because they are public aggregates, not microdata.
+Published district tables that RIDIP loads into the database. They are committed because they are public aggregates, not microdata.
 
-## eicv7_district_poverty.csv
+| File | Contents |
+| --- | --- |
+| `indicators.csv` | One row per indicator: code, track (`domain`), name, unit, whether higher or lower is better, source, source URL, notes, and whether it is official or derived |
+| `indicator_values.csv` | One row per indicator, area and year: value and standard error (where NISR publishes one). Area `rwanda` is the national value |
+| `eicv7_district_poverty.csv` | EICV7 Poverty Profile, Annex B, as transcribed (the original Stage 4 input) |
 
-Headcount poverty rate (% of population) by district.
+Load with `python -m scripts.load_indicators` from `backend/`.
 
-- `poverty_2024`: EICV7 (2023/24), actual.
-- `poverty_2017`: EICV5 (2016/17), modelled to the EICV7 methodology so the two years are comparable.
-- National: 39.8% (2017) and 27.4% (2024).
+## How they are built
 
-Source: NISR, *EICV7 Poverty Profile, Thematic Report*, Annex B, "Headcount Poverty Rate in 2024 (actual) and 2017 (modelled) by District".
-https://www.statistics.gov.rw/sites/default/files/documents/2025-07/EICV7_Poverty%20Profile.pdf
+`analytics/etl/build_seed.py` builds both CSVs from the official files. Download these into `analytics/etl/src/` (not committed):
 
-Checked row by row against Annex B on 26 Oct 2026. The 2024 values also match the district poverty map in the EICV7 dissemination booklet.
+| File | Download |
+| --- | --- |
+| `sas2025_tables.xlsx` | https://statistics.gov.rw/sites/default/files/documents/2025-12/SAS%202025_Annual%20Tables.xlsx |
+| `lfs2025_tables.xlsx` | https://statistics.gov.rw/sites/default/files/documents/2026-05/RWLFS_Annual_Tables_LFS2025.xlsx |
+
+The EICV7 and FinScope tables come from PDFs. Their parsed forms are committed next to the scripts:
+
+- `eicv7_mir_tables.json`: district annex tables of the EICV7 Main Indicators Report, parsed by `parse_mir.py`.
+- `finscope2024_districts.json`: FinScope 2024 Figure 13, rebuilt from the chart's data labels (`finscope2024_fig13_items.txt`) by `parse_finscope.py`.
+
+Then run, from the repository root:
+
+```bash
+cp data/seed/eicv7_district_poverty.csv analytics/etl/eicv7_mir_tables.json analytics/etl/finscope2024_districts.json analytics/etl/src/
+python analytics/etl/build_seed.py analytics/etl/src data/seed
+```
+
+Checks applied: every indicator must cover all 30 districts; FinScope segments must add up to 100% (±1). Details: [docs/methodology.md](../../docs/methodology.md).

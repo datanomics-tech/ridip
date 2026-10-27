@@ -1,0 +1,212 @@
+{
+ "Burera": {
+  "banked": 11,
+  "other_formal": 87,
+  "informal_only": 2,
+  "excluded": 1,
+  "total": 101
+ },
+ "Nyarugenge": {
+  "banked": 59,
+  "other_formal": 40,
+  "informal_only": 0,
+  "excluded": 1,
+  "total": 100
+ },
+ "Nyamagabe": {
+  "banked": 11,
+  "other_formal": 84,
+  "informal_only": 4,
+  "excluded": 1,
+  "total": 100
+ },
+ "Gatsibo": {
+  "banked": 23,
+  "other_formal": 73,
+  "informal_only": 3,
+  "excluded": 1,
+  "total": 100
+ },
+ "Musanze": {
+  "banked": 24,
+  "other_formal": 71,
+  "informal_only": 5,
+  "excluded": 1,
+  "total": 101
+ },
+ "Gasabo": {
+  "banked": 51,
+  "other_formal": 46,
+  "informal_only": 2,
+  "excluded": 1,
+  "total": 100
+ },
+ "Bugesera": {
+  "banked": 23,
+  "other_formal": 71,
+  "informal_only": 5,
+  "excluded": 2,
+  "total": 101
+ },
+ "Kicukiro": {
+  "banked": 62,
+  "other_formal": 35,
+  "informal_only": 2,
+  "excluded": 2,
+  "total": 101
+ },
+ "Muhanga": {
+  "banked": 17,
+  "other_formal": 76,
+  "informal_only": 5,
+  "excluded": 2,
+  "total": 100
+ },
+ "Rwamagana": {
+  "banked": 27,
+  "other_formal": 68,
+  "informal_only": 3,
+  "excluded": 2,
+  "total": 100
+ },
+ "Nyagatare": {
+  "banked": 17,
+  "other_formal": 77,
+  "informal_only": 4,
+  "excluded": 3,
+  "total": 101
+ },
+ "Ruhango": {
+  "banked": 22,
+  "other_formal": 70,
+  "informal_only": 5,
+  "excluded": 3,
+  "total": 100
+ },
+ "Kamonyi": {
+  "banked": 16,
+  "other_formal": 76,
+  "informal_only": 4,
+  "excluded": 3,
+  "total": 99
+ },
+ "Kirehe": {
+  "banked": 7,
+  "other_formal": 86,
+  "informal_only": 5,
+  "excluded": 3,
+  "total": 101
+ },
+ "Karongi": {
+  "banked": 8,
+  "other_formal": 83,
+  "informal_only": 6,
+  "excluded": 3,
+  "total": 100
+ },
+ "Rubavu": {
+  "banked": 22,
+  "other_formal": 71,
+  "informal_only": 4,
+  "excluded": 3,
+  "total": 100
+ },
+ "Gisagara": {
+  "banked": 10,
+  "other_formal": 77,
+  "informal_only": 9,
+  "excluded": 4,
+  "total": 100
+ },
+ "Nyanza": {
+  "banked": 17,
+  "other_formal": 74,
+  "informal_only": 4,
+  "excluded": 4,
+  "total": 99
+ },
+ "Kayonza": {
+  "banked": 11,
+  "other_formal": 76,
+  "informal_only": 8,
+  "excluded": 5,
+  "total": 100
+ },
+ "Huye": {
+  "banked": 15,
+  "other_formal": 73,
+  "informal_only": 6,
+  "excluded": 6,
+  "total": 100
+ },
+ "Nyamasheke": {
+  "banked": 13,
+  "other_formal": 78,
+  "informal_only": 3,
+  "excluded": 6,
+  "total": 100
+ },
+ "Rusizi": {
+  "banked": 22,
+  "other_formal": 68,
+  "informal_only": 5,
+  "excluded": 6,
+  "total": 101
+ },
+ "Rutsiro": {
+  "banked": 9,
+  "other_formal": 78,
+  "informal_only": 6,
+  "excluded": 6,
+  "total": 99
+ },
+ "Gicumbi": {
+  "banked": 8,
+  "other_formal": 75,
+  "informal_only": 11,
+  "excluded": 7,
+  "total": 101
+ },
+ "Ngororero": {
+  "banked": 10,
+  "other_formal": 78,
+  "informal_only": 5,
+  "excluded": 7,
+  "total": 100
+ },
+ "Gakenke": {
+  "banked": 18,
+  "other_formal": 69,
+  "informal_only": 5,
+  "excluded": 8,
+  "total": 100
+ },
+ "Nyabihu": {
+  "banked": 13,
+  "other_formal": 74,
+  "informal_only": 5,
+  "excluded": 8,
+  "total": 100
+ },
+ "Rulindo": {
+  "banked": 13,
+  "other_formal": 74,
+  "informal_only": 4,
+  "excluded": 8,
+  "total": 99
+ },
+ "Ngoma": {
+  "banked": 9,
+  "other_formal": 77,
+  "informal_only": 6,
+  "excluded": 8,
+  "total": 100
+ },
+ "Nyaruguru": {
+  "banked": 6,
+  "other_formal": 78,
+  "informal_only": 5,
+  "excluded": 10,
+  "total": 99
+ }
+}

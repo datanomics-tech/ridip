@@ -20,8 +20,29 @@ DOMAINS = {
     },
     "employment": {
         "title": "Employment",
-        "track": "Track 3: Open Innovation (youth employment)",
+        "track": "Track 3: Open Innovation · Employment",
         "question": "Where are young people and workers left without decent work?",
         "nst2": "NST2 targets at least 1.25 million productive, decent jobs by 2029 (about 250,000 a year).",
+    },
+    "health": {
+        "title": "Health",
+        "track": "Track 3: Open Innovation · Health",
+        "question": "Where are children and mothers least reached by nutrition and health services?",
+        "nst2": "NST2 aims to cut child stunting from 33% to 15%, quadruple the number of registered health "
+                "workers and improve maternal, child and infant health services.",
+    },
+    "education": {
+        "title": "Education",
+        "track": "Track 3: Open Innovation · Education",
+        "question": "Where are children not attending, repeating or completing school, and where are digital skills lowest?",
+        "nst2": "NST2 aims to raise pre-primary enrolment from 35% to 65%, train 1 million coders and 500,000 people "
+                "in advanced ICT, and open TVET Centres of Excellence.",
+    },
+    "transport": {
+        "title": "Transport",
+        "track": "Track 3: Open Innovation · Transport",
+        "question": "Where are households furthest from all-weather roads and public transport?",
+        "nst2": "Access to roads and public transport links households to the markets, jobs and services that "
+                "NST2's agriculture, jobs and health goals depend on.",
     },
 }

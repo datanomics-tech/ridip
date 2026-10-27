@@ -4,8 +4,10 @@ export type DistrictProperties = { code: string; name: string; province: string 
 export type DistrictFeature = Feature<MultiPolygon, DistrictProperties>;
 export type DistrictCollection = FeatureCollection<MultiPolygon, DistrictProperties>;
 
-export type Domain = "finance_poverty" | "agriculture" | "employment";
-export const DOMAIN_ORDER: Domain[] = ["agriculture", "finance_poverty", "employment"];   // track 1, 2, 3
+export type Domain = "agriculture" | "finance_poverty" | "employment" | "health" | "education" | "transport";
+// Track 1, Track 2, then the four Open Innovation sectors (Track 3)
+export const DOMAIN_ORDER: Domain[] = ["agriculture", "finance_poverty", "employment", "health", "education", "transport"];
+export const OPEN_INNOVATION: Domain[] = ["employment", "health", "education", "transport"];
 
 export type DomainInfo = { title: string; track: string; question: string; nst2: string };
 

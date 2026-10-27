@@ -2,7 +2,7 @@
 
 **Live app: https://ridip.onrender.com** · [API documentation](https://ridip.onrender.com/docs) · [Methodology](docs/methodology.md) · [Tracks and NST2 alignment](docs/tracks.md)
 
-RIDIP turns official NISR statistics into district decisions. For all 30 districts it brings together **21 indicators** across the three hackathon tracks, compares each district with Rwanda, scores where need is greatest, and explains why in plain language.
+RIDIP turns official NISR statistics into district decisions. For all 30 districts it brings together **39 indicators** across six sectors and the three hackathon tracks, compares each district with Rwanda, scores where need is greatest, and explains why in plain language.
 
 Built by **Datanomics Tech** for the **NISR 2026 Big Data Hackathon**.
 
@@ -16,17 +16,20 @@ Built by **Datanomics Tech** for the **NISR 2026 Big Data Hackathon**.
 | --- | --- | --- |
 | **1. Agricultural Productivity** | Where are farmers furthest from improved seed, fertilizer, irrigation and good yields? | Seasonal Agricultural Survey 2025 |
 | **2. Financial Inclusion & Poverty Reduction** | Where is poverty highest, and who is left out of formal finance and basic services? | EICV7 (2023/24), FinScope 2024 |
-| **3. Open Innovation: youth employment** | Where are young people and workers left without decent work? | Labour Force Survey 2017–2025 |
+| **3. Open Innovation: employment** | Where are young people and workers left without decent work? | Labour Force Survey 2017–2025 |
+| **3. Open Innovation: health** | Where are children and mothers least reached by nutrition and health services? | Rwanda DHS 2025, EICV7 |
+| **3. Open Innovation: education** | Where are children not attending, repeating or completing school, and where are digital skills lowest? | EICV7 Education report (2017 and 2024) |
+| **3. Open Innovation: transport** | Where are households furthest from all-weather roads and public transport? | EICV7 Utilities and Amenities report |
 
-Each track has its own page and its own tab in every district profile. See [docs/tracks.md](docs/tracks.md) for the problem, users, decisions supported and NST2 / Vision 2050 alignment of each track.
+Each sector has its own page and its own tab in every district profile. See [docs/tracks.md](docs/tracks.md) for the problem, users, decisions supported and NST2 / Vision 2050 alignment of each track.
 
 ## What you can do
 
 Following the journey in the design wireflows:
 
 1. **Home** (`/`): headline national figures and the five priority districts for each track, plus district groups.
-2. **Explore** (`/explore`, `/agriculture`, `/finance-poverty`, `/open-innovation/employment`): a choropleth map of any indicator and year, a ranked list of all districts, and a quick card for the selected district.
-3. **District profile** (`/place/nyagatare`): need scores for the three tracks, automated insights with their drivers, and one tab per track. Each tab shows every indicator with its gap to Rwanda, rank, 95% confidence interval and trend line.
+2. **Explore** (`/explore`, `/agriculture`, `/finance-poverty`, `/open-innovation/employment`, `/health`, `/education`, `/transport` under `/open-innovation/`): a choropleth map of any indicator and year, a ranked list of all districts, and a quick card for the selected district.
+3. **District profile** (`/place/nyagatare`): need scores for the six sectors, automated insights with their drivers, and one tab per sector. Each tab shows every indicator with its gap to Rwanda, rank, 95% confidence interval and trend line.
 4. **Compare** (`/compare?a=nyamagabe&b=musanze`): two districts side by side, with the better value highlighted.
 5. **Report builder** (`/reports/new?place=huye`): choose sections, then download a PDF (via print) or a CSV.
 6. **Search** any district or indicator from the top bar. Every page has a shareable link.
@@ -35,9 +38,9 @@ Following the journey in the design wireflows:
 
 ## Innovation: explainable analytics
 
-- **Need score (0–100) per district and track.** Indicators are standardised, oriented so that higher always means more need, averaged and ranked. The drivers behind every score are listed, so it is never a black box.
+- **Need score (0–100) per district and sector.** Indicators are standardised, oriented so that higher always means more need, averaged and ranked. The drivers behind every score are listed, so it is never a black box.
 - **Statistical significance.** Where NISR publishes standard errors (EICV7), RIDIP tests whether a district really differs from Rwanda at 95% confidence, and does not over-read small gaps.
-- **District typology.** k-means clustering on all 21 indicators groups districts with similar profiles, so a programme that works in one district can be targeted at its peers.
+- **District typology.** k-means clustering on all 39 indicators groups districts with similar profiles, so a programme that works in one district can be targeted at its peers.
 - **Automated insights.** Plain-language findings such as main drivers, strengths and trends, each traceable to its source table.
 
 Details: [docs/methodology.md](docs/methodology.md).
@@ -48,6 +51,9 @@ Details: [docs/methodology.md](docs/methodology.md).
 - Use of improved seeds ranges from **11.1% of farmers in Ngororero to 55.2% in Nyagatare**. Modern irrigation covers **2.2%** of agricultural land nationally, against NST2's aim to expand irrigated land by 85%.
 - Youth NEET fell nationally from **34.2% (2017) to 24.5% (2025)**, but is still **35.5% in Gisagara**. Unemployment ranges from **7.0% (Gakenke) to 18.4% (Nyamasheke)**.
 - Mobile money has made **92%** of adults formally included, yet only **22%** are banked, and as few as **6% in Nyaruguru**.
+- Child stunting is **26.8%** nationally (2025), from **8.7% in Nyarugenge to 38.8% in Gicumbi**, against NST2's target of 15%.
+- Only **33.7%** of secondary-age youth attend secondary school, and computer literacy among 15–24 year-olds is **15.6%**.
+- Just **27.7%** of households live within 20 minutes' walk of a public transport stage, and only **7.9% in Rutsiro**.
 
 ## Data sources
 
@@ -58,6 +64,9 @@ Details: [docs/methodology.md](docs/methodology.md).
 | FinScope Rwanda 2024, Figures 5 and 13 | [NISR / AFR](https://statistics.gov.rw/sites/default/files/documents/2024-09/Rwanda-Finscope-2024-Report_compressed.pdf) | Banked, formally included, excluded |
 | Seasonal Agricultural Survey 2025, Annual Tables | [NISR](https://statistics.gov.rw/sites/default/files/documents/2025-12/SAS%202025_Annual%20Tables.xlsx) | Seeds, fertilizer, irrigation, erosion, maize and bean yields |
 | Labour Force Survey 2025, Annual Tables | [NISR](https://statistics.gov.rw/sites/default/files/documents/2026-05/RWLFS_Annual_Tables_LFS2025.xlsx) | Unemployment, youth NEET, participation, employment ratio, underutilisation, earnings |
+| Rwanda DHS 2025 Final Report, Appendix D | [NISR](https://statistics.gov.rw/sites/default/files/documents/2026-08/2025%20RDHS%20Final%20Report.pdf) | Stunting, modern contraception, birth registration, vitamin A, deworming |
+| EICV7 Thematic Report: Education, Annex | [NISR](https://statistics.gov.rw/sites/default/files/documents/2025-04/EICV7_Thematic%20Report%20Education_N.pdf) | Attendance, completion, repetition, out of school, literacy, computer literacy |
+| EICV7 Thematic Report: Utilities and Amenities, Annexes | [NISR](https://www.statistics.gov.rw/sites/default/files/documents/2025-05/EICV7_Thematic%20Report%20Amenities%20and%20Utilities%20%281%29.pdf) | Road and transport-stage access, bicycle and motorcycle ownership, mobile phones |
 | District boundaries | [geoBoundaries](https://www.geoboundaries.org/) gbOpen RWA ADM2 (Open Data Rwanda / NISR), CC BY 4.0 | Map |
 | Base map | © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL | Map |
 
@@ -84,7 +93,7 @@ Browser (React + Leaflet) ──> FastAPI (Python) ──> PostgreSQL + PostGIS
 
 | Endpoint | Returns |
 | --- | --- |
-| `GET /api/indicators` | All 21 indicators with track, unit, source and years |
+| `GET /api/indicators` | All 39 indicators with track, unit, source and years |
 | `GET /api/indicators/{code}` | Values by year, nationally and per district, with standard errors |
 | `GET /api/places/{code}` | District profile: indicators, gaps, ranks, trends, need scores, insights, group |
 | `GET /api/overview` | Need scores and priority districts per track, district groups |
@@ -108,7 +117,7 @@ python -m venv .venv
 .venv\Scripts\activate            # Windows (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
 python -m scripts.load_districts  # 30 district boundaries
-python -m scripts.load_indicators # 21 indicators, 1,870 values
+python -m scripts.load_indicators # 39 indicators, 2,490 values
 python -m pytest -q               # 12 tests
 uvicorn app.main:app --reload     # API on http://127.0.0.1:8000
 ```
@@ -125,7 +134,7 @@ npm run dev                       # app on http://localhost:5173
 
 ```
 backend/        FastAPI app, analytics, loading scripts and tests
-frontend/       React app (pages: home, explore, district profile, compare, report, about)
+frontend/       React app (pages: home, explore, sector pages, open innovation, district profile, compare, report, about)
 analytics/etl/  Scripts that build data/seed/ from the official NISR files
 data/seed/      Indicator tables loaded into the database, with source notes
 database/       Database initialisation (PostGIS)

@@ -14,7 +14,7 @@ from sqlalchemy import text
 from app.db import engine
 
 SEED = Path(__file__).resolve().parents[2] / "data" / "seed"
-DOMAINS = {"agriculture", "finance_poverty", "employment"}
+DOMAINS = {"agriculture", "finance_poverty", "employment", "health", "education", "transport"}
 
 SCHEMA = """
 DROP TABLE IF EXISTS indicator_values;

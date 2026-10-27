@@ -6,7 +6,7 @@ The Datanomics Tech team used **Claude (Anthropic)** as an AI assistant while bu
 
 - Drafting the project brief, blueprint, pitch deck and design diagrams.
 - Writing and explaining code: the FastAPI backend, database setup, data pipeline, analytics (need scores, significance tests, k-means grouping, insight rules), tests and the React app.
-- Locating official NISR tables and extracting their values: EICV7 reports, FinScope 2024, SAS 2025 and LFS 2025.
+- Locating official NISR tables and extracting their values: EICV7 reports, FinScope 2024, SAS 2025, LFS 2025 and RDHS 2025.
 - Step-by-step guidance for the development environment, GitHub and deployment.
 - Drafting this documentation.
 

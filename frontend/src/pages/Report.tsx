@@ -9,7 +9,7 @@ export default function Report({ place, compare }: { place: string | null; compa
   const [profile, setProfile] = useState<Profile | null>(null);
   const [other, setOther] = useState<Profile | null>(null);
   const [sections, setSections] = useState<Record<Domain | "insights", boolean>>({
-    insights: true, finance_poverty: true, agriculture: true, employment: true,
+    insights: true, agriculture: true, finance_poverty: true, employment: true, health: true, education: true, transport: true,
   });
   const [format, setFormat] = useState<"pdf" | "csv">("pdf");
   const [ready, setReady] = useState(false);

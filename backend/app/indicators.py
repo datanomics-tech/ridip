@@ -1,36 +1,47 @@
+from functools import lru_cache
+
 from sqlalchemy import text
 
 from app.db import engine
 
+META_COLUMNS = "code, domain, name, unit, direction, source, source_url, note, value_type"
+
+
+@lru_cache(maxsize=1)
+def load_all() -> tuple[dict, list[dict]]:
+    """All indicator metadata and values. Cached: the data only changes when the loader is rerun."""
+    with engine.connect() as conn:
+        meta = {r["code"]: dict(r) for r in conn.execute(text(f"SELECT {META_COLUMNS} FROM indicators ORDER BY position")).mappings()}
+        values = [dict(r) for r in conn.execute(
+            text("SELECT indicator_code, area_code, year, value, se FROM indicator_values ORDER BY year")).mappings()]
+    return meta, values
+
 
 def list_indicators() -> list[dict]:
-    query = text("SELECT code, name, unit, source FROM indicators ORDER BY name")
-    with engine.connect() as conn:
-        return [dict(r) for r in conn.execute(query).mappings()]
+    meta, values = load_all()
+    years: dict[str, set] = {}
+    for v in values:
+        years.setdefault(v["indicator_code"], set()).add(v["year"])
+    return [{**m, "years": sorted(years.get(c, []))} for c, m in meta.items()]   # already in display order
 
 
 def get_indicator(code: str) -> dict | None:
     """One indicator with its values by year, for Rwanda and for each district."""
-    with engine.connect() as conn:
-        meta = conn.execute(
-            text("SELECT code, name, unit, description, source, source_url FROM indicators WHERE code = :code"),
-            {"code": code},
-        ).mappings().first()
-        if meta is None:
-            return None
-        rows = conn.execute(
-            text("SELECT area_code, year, value FROM indicator_values WHERE indicator_code = :code ORDER BY year"),
-            {"code": code},
-        ).mappings().all()
-
+    meta, values = load_all()
+    if code not in meta:
+        return None
     national: dict[str, float] = {}
     districts: dict[str, dict[str, float]] = {}
-    for r in rows:
-        year, value = str(r["year"]), float(r["value"])
-        if r["area_code"] == "rwanda":
-            national[year] = value
+    se: dict[str, dict[str, float]] = {}
+    for v in values:
+        if v["indicator_code"] != code:
+            continue
+        year = str(v["year"])
+        if v["area_code"] == "rwanda":
+            national[year] = v["value"]
         else:
-            districts.setdefault(r["area_code"], {})[year] = value
-
-    years = sorted({int(r["year"]) for r in rows})
-    return {**dict(meta), "years": years, "national": national, "districts": districts}
+            districts.setdefault(v["area_code"], {})[year] = v["value"]
+        if v["se"] is not None:
+            se.setdefault(v["area_code"], {})[year] = v["se"]
+    years = sorted({v["year"] for v in values if v["indicator_code"] == code})
+    return {**meta[code], "years": years, "national": national, "districts": districts, "se": se}

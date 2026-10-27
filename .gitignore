@@ -236,3 +236,6 @@ dist/
 
 
 *.tsbuildinfo
+
+# Raw NISR files used by the data pipeline
+analytics/etl/src/

@@ -1,34 +1,35 @@
 import type { Feature, Geometry } from "geojson";
 import type { Layer, LeafletMouseEvent, PathOptions } from "leaflet";
 import { GeoJSON, MapContainer, TileLayer } from "react-leaflet";
-import { colourFor } from "./scale";
 import type { DistrictCollection, DistrictProperties } from "./types";
 
 type MapFeature = Feature<Geometry, DistrictProperties>;
 
 type Props = {
   districts: DistrictCollection;
-  values: Record<string, number>;
+  colour: (code: string) => string;
+  tooltip: (code: string, name: string) => string;
   selected: string | null;
   onSelect: (code: string) => void;
+  /** Changes whenever the colours change, so the map redraws. */
+  version: string;
+  height?: number;
 };
 
-export default function DistrictMap({ districts, values, selected, onSelect }: Props) {
+export default function DistrictMap({ districts, colour, tooltip, selected, onSelect, version, height }: Props) {
   const style = (feature?: MapFeature): PathOptions => {
     const code = feature?.properties.code ?? "";
     const isSelected = code === selected;
     return {
       color: isSelected ? "#0B2545" : "#FFFFFF",
       weight: isSelected ? 4 : 1.2,
-      fillColor: colourFor(values[code]),
+      fillColor: colour(code),
       fillOpacity: 0.85,
     };
   };
 
   const onEachFeature = (feature: MapFeature, layer: Layer) => {
-    const value = values[feature.properties.code];
-    const label = value === undefined ? "no data" : `${value.toFixed(1)}% poor`;
-    layer.bindTooltip(`<strong>${feature.properties.name}</strong><br>${label}`, { sticky: true });
+    layer.bindTooltip(tooltip(feature.properties.code, feature.properties.name), { sticky: true });
     layer.on({
       click: (e: LeafletMouseEvent) => {
         onSelect(feature.properties.code);
@@ -38,17 +39,19 @@ export default function DistrictMap({ districts, values, selected, onSelect }: P
   };
 
   return (
-    <MapContainer center={[-1.95, 29.9]} zoom={9} minZoom={8} className="map" scrollWheelZoom>
+    <MapContainer
+      center={[-1.95, 29.9]}
+      zoom={9}
+      minZoom={8}
+      className="map"
+      style={height ? { height } : undefined}
+      scrollWheelZoom
+    >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <GeoJSON
-        key={`${selected ?? "none"}-${Object.keys(values).length}`}
-        data={districts}
-        style={style}
-        onEachFeature={onEachFeature}
-      />
+      <GeoJSON key={`${version}-${selected ?? "none"}`} data={districts} style={style} onEachFeature={onEachFeature} />
     </MapContainer>
   );
 }

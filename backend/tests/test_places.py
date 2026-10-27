@@ -11,7 +11,7 @@ pytestmark = pytest.mark.skipif(not indicators_loaded(), reason="Indicators are 
 def test_place_profile_has_three_tracks_and_insights():
     body = client.get("/api/places/nyagatare").json()
     assert body["name"] == "Nyagatare"
-    assert set(body["tracks"]) == {"agriculture", "finance_poverty", "employment"}
+    assert set(body["tracks"]) == {"agriculture", "finance_poverty", "employment", "health", "education", "transport"}
     poverty = next(i for i in body["tracks"]["finance_poverty"]["indicators"] if i["code"] == "poverty_rate")
     assert poverty["value"] == 36.4 and poverty["national"] == 27.4
     assert poverty["significance"] == "significantly above"
@@ -35,9 +35,9 @@ def test_overview_priorities_and_groups():
 def test_csv_downloads():
     report = client.get("/api/places/huye/report.csv")
     assert report.status_code == 200 and report.text.startswith("district,track,indicator")
-    assert len(report.text.strip().splitlines()) == 22
+    assert len(report.text.strip().splitlines()) == 40
     data = client.get("/api/data.csv")
-    assert data.status_code == 200 and len(data.text.strip().splitlines()) == 1871
+    assert data.status_code == 200 and len(data.text.strip().splitlines()) == 2491
 
 
 def test_unknown_place_returns_404():

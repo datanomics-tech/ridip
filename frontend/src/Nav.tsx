@@ -8,7 +8,7 @@ const LINKS = [
   { to: "/explore", label: "Explore" },
   { to: "/agriculture", label: "Agriculture" },
   { to: "/finance-poverty", label: "Finance & poverty" },
-  { to: "/open-innovation/employment", label: "Employment" },
+  { to: "/open-innovation", label: "Open innovation" },
   { to: "/compare", label: "Compare" },
 ];
 

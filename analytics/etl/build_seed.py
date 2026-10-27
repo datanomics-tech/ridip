@@ -13,6 +13,9 @@ import csv, json, sys, warnings
 from pathlib import Path
 import openpyxl
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from parse_tables import table  # noqa: E402
+
 warnings.filterwarnings("ignore")
 SRC, OUT = Path(sys.argv[1]), Path(sys.argv[2])
 DISTRICTS = ["Nyarugenge","Gasabo","Kicukiro","Nyanza","Gisagara","Nyaruguru","Huye","Nyamagabe","Ruhango","Muhanga","Kamonyi","Karongi","Rutsiro","Rubavu","Nyabihu","Ngororero","Rusizi","Nyamasheke","Rulindo","Gakenke","Musanze","Burera","Gicumbi","Rwamagana","Nyagatare","Gatsibo","Kayonza","Kirehe","Ngoma","Bugesera"]
@@ -23,6 +26,9 @@ URL = {
     "mir": "https://www.statistics.gov.rw/sites/default/files/documents/2025-07/EICV7_Main%20Indicator%20Report.pdf",
     "pov": "https://www.statistics.gov.rw/sites/default/files/documents/2025-07/EICV7_Poverty%20Profile.pdf",
     "fin": "https://statistics.gov.rw/sites/default/files/documents/2024-09/Rwanda-Finscope-2024-Report_compressed.pdf",
+    "dhs": "https://statistics.gov.rw/sites/default/files/documents/2026-08/2025%20RDHS%20Final%20Report.pdf",
+    "edu": "https://statistics.gov.rw/sites/default/files/documents/2025-04/EICV7_Thematic%20Report%20Education_N.pdf",
+    "util": "https://www.statistics.gov.rw/sites/default/files/documents/2025-05/EICV7_Thematic%20Report%20Amenities%20and%20Utilities%20%281%29.pdf",
 }
 indicators, values = [], []
 
@@ -144,7 +150,6 @@ add("poverty_rate", "rwanda", 2024, 27.4, mir["A9.23"]["national"][1])
 
 MIR = "NISR, EICV7 Main Indicators Report (2023/24)"
 eicv = [
-    ("fin_health_insurance", "A3.7", "Population with health insurance", "% of population", "higher"),
     ("fin_smartphone", "A5.19", "Households owning a smartphone", "% of households", "higher"),
     ("fin_internet", "A5.15", "Households with internet access at home", "% of households", "higher"),
     ("fin_electricity", "A5.14", "Households using electricity for lighting", "% of households", "higher"),
@@ -174,14 +179,78 @@ for year, banked, formal, excluded in [(2024, 22, 92, 4), (2020, 22, 77, 7)]:
     add("fin_formal", "rwanda", year, formal)
     add("fin_excluded", "rwanda", year, excluded)
 
+# ---------- Health: Rwanda DHS 2025, Appendix D district tables; EICV7 health insurance ----------
+DHS = "NISR, Rwanda Demographic and Health Survey 2025, Appendix D"
+dhs = (SRC / "dhs_annex.txt").read_text(encoding="utf-8")
+health = [
+    ("health_stunting", "Table | D.4 ", 1, "Children under 5 who are stunted", "% of children under 5", "lower", "Table D.4"),
+    ("health_modern_contraception", "Table | D.3 ", 1, "Married women using a modern contraceptive method", "% of married women 15-49", "higher", "Table D.3"),
+    ("health_birth_registration", "Table | D.1 ", 2, "Children under 5 with a registered birth", "% of children under 5", "higher", "Table D.1"),
+    ("health_vitamin_a", "Table | D.6 ", 3, "Children given vitamin A in the last 6 months", "% of children 6-59 months", "higher", "Table D.6"),
+    ("health_deworming", "Table | D.6 ", 5, "Children given deworming medication in the last 6 months", "% of children 12-59 months", "higher", "Table D.6"),
+]
+for code, title, col, name, unit, direction, tab in health:
+    add_indicator(code, "health", name, unit, direction, f"{DHS}, {tab}", URL["dhs"])
+    for area, row in table(dhs, title).items():
+        add(code, area, 2025, row[col])
+add_indicator("health_insurance", "health", "Population with health insurance", "% of population", "higher",
+              f"{MIR}, Table A3.7", URL["mir"])
+t = mir["A3.7"]
+for d, r in t["rows"].items():
+    add("health_insurance", d, 2024, r[0], r[1])
+add("health_insurance", "rwanda", 2024, t["national"][0], t["national"][1])
+
+# ---------- Education: EICV7 Thematic Report Education, Annex A ----------
+EDU = "NISR, EICV7 Thematic Report: Education (2023/24), Annex"
+edu = (SRC / "edu_annex.txt").read_text(encoding="utf-8")
+education = [  # code, title, {year: column}, name, unit, direction, table
+    ("edu_primary_attendance", "Table A.3:", {2024: 2}, "Net attendance rate, primary school", "% of children 7-12", "higher", "Table A.3"),
+    ("edu_secondary_attendance", "Table A.5:", {2024: 2}, "Net attendance rate, secondary school", "% of youth 13-18", "higher", "Table A.5"),
+    ("edu_primary_completion", "Table A.22:", {2024: 2}, "Primary school completion rate", "% of population 14-16", "higher", "Table A.22"),
+    ("edu_primary_repetition", "Table A. 11:", {2024: 2}, "Repetition rate, primary school", "% of primary pupils", "lower", "Table A.11"),
+    ("edu_out_of_school", "Table A.27:", {2024: 0}, "Out-of-school rate, upper secondary age", "% of youth 16-18", "lower", "Table A.27"),
+    ("edu_literacy", "Table A. 16:", {2017: 2, 2024: 6}, "Literacy rate, population 15 and over", "% of population 15+", "higher", "Table A.16"),
+    ("edu_computer_literacy", "Table A.19:", {2017: 2, 2024: 6}, "Computer literacy, youth 15-24", "% of youth 15-24", "higher", "Table A.19"),
+]
+for code, title, cols, name, unit, direction, tab in education:
+    note = "2017 values are from EICV5 (2016/17), as published in the same table." if 2017 in cols else ""
+    add_indicator(code, "education", name, unit, direction, f"{EDU}, {tab}", URL["edu"], note)
+    for area, row in table(edu, title).items():
+        for year, col in cols.items():
+            add(code, area, year, row[col])
+
+# ---------- Transport: EICV7 Thematic Report Utilities and Amenities ----------
+UTIL = "NISR, EICV7 Thematic Report: Utilities and Amenities (2023/24)"
+util = (SRC / "util_annex.txt").read_text(encoding="utf-8")
+add_indicator("tr_road_access", "transport", "Households within 20 minutes' walk of an all-weather road", "% of households",
+              "higher", f"{UTIL}, Table A.28", URL["util"])
+for area, row in table(util, "Table A.28:").items():
+    add("tr_road_access", area, 2024, row[0])
+add_indicator("tr_stage_access", "transport", "Households within 20 minutes' walk of a public transport stage", "% of households",
+              "higher", f"{UTIL}, Table A.31", URL["util"])
+add_indicator("tr_stage_far", "transport", "Households an hour or more from a public transport stage", "% of households",
+              "lower", f"{UTIL}, Table A.31", URL["util"], "Sum of the '60-119 minutes' and '120+ minutes' columns.", "derived")
+for area, row in table(util, "Table A.31:").items():
+    add("tr_stage_access", area, 2024, row[0])
+    add("tr_stage_far", area, 2024, float(row[2]) + float(row[3]))
+for code, title, name, tab in [("tr_bicycle", "Table B.11:", "Households owning a bicycle", "Table B.11"),
+                               ("tr_motorcycle", "Table B.12:", "Households owning a motorcycle (private use)", "Table B.12")]:
+    add_indicator(code, "transport", name, "% of households", "higher", f"{UTIL}, {tab}", URL["util"])
+    for area, row in table(util, title).items():
+        add(code, area, 2024, row[0], row[1])
+
+# Finance: mobile phone ownership (mobile money access)
+add_indicator("fin_mobile_phone", "finance_poverty", "Households owning a mobile phone", "% of households", "higher",
+              f"{UTIL}, Table B.14", URL["util"])
+for area, row in table(util, "Table B.14:").items():
+    add("fin_mobile_phone", area, 2024, row[0], row[1])
+
 # ---------- Checks and output ----------
 codes = {i["code"] for i in indicators}
 for code in codes:
     areas = {v["area_code"] for v in values if v["indicator_code"] == code}
     missing = {d.lower() for d in DISTRICTS} - areas
     assert not missing, f"{code}: missing {missing}"
-ORDER = ['ag_improved_seeds', 'ag_inorganic_fertilizer', 'ag_organic_fertilizer', 'ag_irrigated_land', 'ag_erosion', 'ag_maize_yield', 'ag_bean_yield', 'poverty_rate', 'fin_banked', 'fin_formal', 'fin_excluded', 'fin_health_insurance', 'fin_smartphone', 'fin_internet', 'fin_electricity', 'emp_unemployment', 'emp_youth_neet', 'emp_participation', 'emp_employment_ratio', 'emp_underutilization', 'emp_median_earnings']
-indicators.sort(key=lambda i: ORDER.index(i["code"]))   # display order in the app
 OUT.mkdir(parents=True, exist_ok=True)
 with open(OUT / "indicators.csv", "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=list(indicators[0])); w.writeheader(); w.writerows(indicators)

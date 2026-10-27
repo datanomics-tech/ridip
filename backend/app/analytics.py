@@ -14,7 +14,7 @@ can be explained:
    flagged as significantly above or below the national value when the difference is larger than
    1.96 times the combined standard error (95% confidence).
 3. District typology. k-means clustering (k = 4, deterministic start) groups districts with similar
-   profiles across all three tracks, so programmes can be designed for groups of similar districts.
+   profiles across all six sectors, so programmes can be designed for groups of similar districts.
 """
 import math
 from functools import lru_cache
@@ -137,12 +137,14 @@ def _describe_clusters(clusters: dict[str, int], need: dict) -> list[dict]:
             profile[dom] = round(mean(vals), 1) if vals else None
         scored = sorted(((v, dom) for dom, v in profile.items() if v is not None), reverse=True)
         high = [DOMAINS[dom]["title"] for v, dom in scored if v >= 60]
-        if not high and all(v < 40 for v, _ in scored):
-            label = "Lower need: urban, well served"
-        elif not high:
-            label = f"Moderate need, mostly {DOMAINS[scored[0][1]]['title'].lower()}"
+        low = [dom for v, dom in scored if v < 40]
+        if len(low) >= len(scored) - 1:
+            top_v, top = scored[0]
+            label = "Lower need overall" + (f", except {DOMAINS[top]['title'].lower()}" if top_v >= 50 else "")
+        elif high:
+            label = "Higher need: " + ", ".join(high)
         else:
-            label = "Higher need: " + " and ".join(high)
+            label = f"Moderate need, highest in {DOMAINS[scored[0][1]]['title'].lower()}"
         groups.append(dict(id=i, label=label, need=profile, members=members))
     groups.sort(key=lambda g: -sum(v for v in g["need"].values() if v is not None))
     for n, g in enumerate(groups):

@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Compare from "./pages/Compare";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
+import OpenInnovation from "./pages/OpenInnovation";
 import Place from "./pages/Place";
 import Report from "./pages/Report";
 
@@ -11,6 +12,9 @@ const TRACKS = {
   "/finance-poverty": "finance_poverty",
   "/agriculture": "agriculture",
   "/open-innovation/employment": "employment",
+  "/open-innovation/health": "health",
+  "/open-innovation/education": "education",
+  "/open-innovation/transport": "transport",
 } as const;
 
 export default function App() {
@@ -19,6 +23,7 @@ export default function App() {
 
   let page;
   if (clean === "/") page = <Home />;
+  else if (clean === "/open-innovation") page = <OpenInnovation />;
   else if (clean === "/explore") page = <Explore basePath="/explore" indicator={params.get("i")} year={params.get("y")} place={params.get("place")} />;
   else if (clean in TRACKS) {
     const domain = TRACKS[clean as keyof typeof TRACKS];

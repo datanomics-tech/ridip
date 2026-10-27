@@ -19,7 +19,7 @@ export default function Place({ code, tab }: { code: string; tab: string }) {
     );
   }, [code]);
 
-  const active: Tab = (DOMAIN_ORDER as string[]).includes(tab) ? (tab as Domain) : "overview";
+  const active: Tab = (DOMAIN_ORDER as string[]).includes(tab) && profile && tab in profile.tracks ? (tab as Domain) : "overview";
   const go = (t: Tab) => navigate(`/place/${code}${t === "overview" ? "" : `?tab=${t}`}`);
 
   if (error) return <main className="page"><p className="notice">{error}</p></main>;
@@ -44,7 +44,7 @@ export default function Place({ code, tab }: { code: string; tab: string }) {
       </header>
 
       <div className="tabs" role="tablist">
-        {(["overview", ...DOMAIN_ORDER] as Tab[]).map((t) => (
+        {(["overview", ...DOMAIN_ORDER.filter((d) => d in profile.tracks)] as Tab[]).map((t) => (
           <button key={t} role="tab" aria-selected={active === t} className={active === t ? "active" : undefined} onClick={() => go(t)}>
             {t === "overview" ? "Overview" : profile.tracks[t].title}
           </button>
@@ -60,7 +60,7 @@ function Overview({ profile, onOpen }: { profile: Profile; onOpen: (t: Tab) => v
   return (
     <>
       <section className="need-grid">
-        {DOMAIN_ORDER.map((d) => {
+        {DOMAIN_ORDER.filter((d) => d in profile.tracks).map((d) => {
           const t = profile.tracks[d];
           return (
             <button key={d} type="button" className="need-card" onClick={() => onOpen(d)}>

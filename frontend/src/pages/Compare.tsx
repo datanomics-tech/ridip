@@ -42,7 +42,7 @@ export default function Compare({ a, b }: { a: string | null; b: string | null }
             <thead>
               <tr><th>Indicator</th><th><Link to={`/place/${pa.code}`}>{pa.name}</Link></th><th><Link to={`/place/${pb.code}`}>{pb.name}</Link></th><th>Rwanda</th></tr>
             </thead>
-            {DOMAIN_ORDER.map((d) => {
+            {DOMAIN_ORDER.filter((d) => d in pa.tracks && d in pb.tracks).map((d) => {
               const ta = pa.tracks[d], tb = pb.tracks[d];
               return (
                 <tbody key={d}>

@@ -24,7 +24,7 @@ from sqlalchemy import text
 
 from app.db import engine
 from app.domains import DOMAINS
-from app.indicators import load_all
+from app.indicators import clear_cache as clear_indicator_cache, load_all
 
 K_CLUSTERS = 4
 URBAN_PROVINCE = "City of Kigali"   # excluded from the agriculture comparison
@@ -43,10 +43,26 @@ def districts() -> dict[str, dict]:
         return {r["code"]: dict(r) for r in rows}
 
 
-@lru_cache(maxsize=1)
+_memo: dict = {}
+
+
+def _per_version(name: str, data: tuple, build):
+    """Cache a result for one version of the loaded data (a new load gives a new tuple object)."""
+    key = (name, id(data))
+    if key not in _memo:
+        for k in [k for k in _memo if k[0] == name]:
+            del _memo[k]
+        _memo[key] = build(data)
+    return _memo[key]
+
+
 def _series() -> dict[str, dict[str, dict[int, tuple[float, float | None]]]]:
     """indicator -> area -> year -> (value, se)"""
-    _, values = load_all()
+    return _per_version("series", load_all(), _build_series)
+
+
+def _build_series(data: tuple) -> dict:
+    _, values = data
     out: dict = {}
     for v in values:
         out.setdefault(v["indicator_code"], {}).setdefault(v["area_code"], {})[v["year"]] = (v["value"], v["se"])
@@ -60,10 +76,20 @@ def _latest_year(code: str) -> int:
     return max(years)
 
 
-@lru_cache(maxsize=1)
 def model() -> dict:
+    return _per_version("model", load_all(), _build_model)
+
+
+def domains_present() -> list[str]:
+    """Sectors that have at least one indicator loaded, in display order."""
     meta, _ = load_all()
-    series = _series()
+    loaded = {m["domain"] for m in meta.values()}
+    return [d for d in DOMAINS if d in loaded]
+
+
+def _build_model(data: tuple) -> dict:
+    meta, _ = data
+    series = _per_version("series", data, _build_series)
     codes = list(meta)                     # display order from the seed file
     ds = list(districts())
 
@@ -80,7 +106,7 @@ def model() -> dict:
         z[c] = {d: sign * (value[c][d] - mu) / sd for d in group}
 
     need, need_rank, rank = {}, {}, {}
-    for dom in DOMAINS:
+    for dom in domains_present():
         group = compared(dom)
         dom_codes = [c for c in codes if meta[c]["domain"] == dom]
         raw = {d: mean(z[c][d] for c in dom_codes) for d in group}
@@ -132,7 +158,7 @@ def _describe_clusters(clusters: dict[str, int], need: dict) -> list[dict]:
     for i in sorted(set(clusters.values())):
         members = sorted(d for d, c in clusters.items() if c == i)
         profile = {}
-        for dom in DOMAINS:
+        for dom in need:
             vals = [need[dom][d] for d in members if d in need[dom]]
             profile[dom] = round(mean(vals), 1) if vals else None
         scored = sorted(((v, dom) for dom, v in profile.items() if v is not None), reverse=True)
@@ -181,7 +207,8 @@ def place_profile(code: str) -> dict | None:
     meta, _ = load_all()
     m, series = model(), _series()
     tracks = {}
-    for dom, info in DOMAINS.items():
+    for dom in domains_present():
+        info = DOMAINS[dom]
         items = []
         for c in [c for c in m["codes"] if meta[c]["domain"] == dom]:
             year = m["latest"][c]
@@ -245,7 +272,8 @@ def _insights(name: str, tracks: dict) -> list[dict]:
 def overview() -> dict:
     m, ds = model(), districts()
     tracks = {}
-    for dom, info in DOMAINS.items():
+    for dom in domains_present():
+        info = DOMAINS[dom]
         order = sorted(m["need_rank"][dom], key=lambda d: m["need_rank"][dom][d])
         tracks[dom] = dict(**info, need=m["need"][dom], priority=[dict(code=d, name=ds[d]["name"], need=m["need"][dom][d]) for d in order[:5]])
     return dict(tracks=tracks, groups=[{**g, "members": [dict(code=d, name=ds[d]["name"]) for d in g["members"]]} for g in m["groups"]],
@@ -253,5 +281,6 @@ def overview() -> dict:
 
 
 def clear_cache() -> None:
-    for f in (districts, model, _series, load_all):
-        f.cache_clear()
+    districts.cache_clear()
+    _memo.clear()
+    clear_indicator_cache()

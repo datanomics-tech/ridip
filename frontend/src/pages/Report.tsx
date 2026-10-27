@@ -77,7 +77,7 @@ export default function Report({ place, compare }: { place: string | null; compa
               <table className="report-table">
                 <thead><tr><th>Track</th><th>Need score (0–100)</th><th>Rank</th></tr></thead>
                 <tbody>
-                  {DOMAIN_ORDER.map((d) => {
+                  {DOMAIN_ORDER.filter((d) => d in profile.tracks).map((d) => {
                     const t = profile.tracks[d];
                     return <tr key={d}><td>{t.title}</td><td>{t.need === null ? "Not ranked" : Math.round(t.need)}</td><td>{t.need_rank === null ? "–" : `${t.need_rank} of ${t.need_of}`}</td></tr>;
                   })}
@@ -86,7 +86,7 @@ export default function Report({ place, compare }: { place: string | null; compa
               <ul>{profile.insights.map((i, n) => <li key={n}>{i.text}</li>)}</ul>
             </section>
           )}
-          {DOMAIN_ORDER.filter((d) => sections[d]).map((d) => {
+          {DOMAIN_ORDER.filter((d) => sections[d] && d in profile.tracks).map((d) => {
             const t = profile.tracks[d];
             return (
               <section key={d}>

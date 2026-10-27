@@ -23,11 +23,12 @@ The EICV7 and FinScope tables come from PDFs. Their parsed forms are committed n
 
 - `eicv7_mir_tables.json`: district annex tables of the EICV7 Main Indicators Report, parsed by `parse_mir.py`.
 - `finscope2024_districts.json`: FinScope 2024 Figure 13, rebuilt from the chart's data labels (`finscope2024_fig13_items.txt`) by `parse_finscope.py`.
+- `dhs_annex.txt`, `edu_annex.txt`, `util_annex.txt`: the district annex pages of the RDHS 2025 Final Report (Appendix D), the EICV7 Education report and the EICV7 Utilities and Amenities report, extracted with their row layout; read by `parse_tables.py`.
 
 Then run, from the repository root:
 
 ```bash
-cp data/seed/eicv7_district_poverty.csv analytics/etl/eicv7_mir_tables.json analytics/etl/finscope2024_districts.json analytics/etl/src/
+cp data/seed/eicv7_district_poverty.csv analytics/etl/eicv7_mir_tables.json analytics/etl/finscope2024_districts.json analytics/etl/*_annex.txt analytics/etl/src/
 python analytics/etl/build_seed.py analytics/etl/src data/seed
 ```
 

@@ -1,0 +1,665 @@
+### PAGE 481
+Appendix
+DISTRICT TABLES
+D
+Table | D.1 | Birth registration of children under age 5
+Percentage of de jure children under age 5 whose births are registered with the civil authorities,
+according to district, Rwanda DHS 2025
+Percentage of children whose births
+Total percentage
+are registered and who:
+of children whose
+Had a birth | Did not have birth | births are | Number of
+District | certificate | certificate | registered | children
+Nyarugenge | 50.3 | 45.6 | 95.9 | 182
+Gasabo | 49.5 | 48.8 | 98.3 | 556
+Kicukiro | 46.9 | 46.3 | 93.2 | 255
+Nyanza | 29.3 | 58.6 | 87.9 | 195
+Gisagara | 49.1 | 46.6 | 95.7 | 276
+Nyaruguru | 48.3 | 46.6 | 94.9 | 179
+Huye | 48.4 | 46.8 | 95.3 | 214
+Nyamagabe | 47.8 | 46.2 | 94.0 | 181
+Ruhango | 40.7 | 51.1 | 91.8 | 181
+Muhanga | 23.3 | 71.4 | 94.7 | 154
+Kamonyi | 21.7 | 72.2 | 93.9 | 258
+Karongi | 44.4 | 51.9 | 96.4 | 188
+Rutsiro | 50.5 | 46.9 | 97.4 | 204
+Rubavu | 41.7 | 52.5 | 94.2 | 356
+Nyabihu | 58.4 | 37.2 | 95.6 | 166
+Ngororero | 39.6 | 53.3 | 92.9 | 174
+Rusizi | 62.9 | 35.2 | 98.1 | 284
+Nyamasheke | 51.0 | 45.4 | 96.4 | 232
+Rulindo | 59.6 | 37.4 | 97.0 | 170
+Gakenke | 52.1 | 45.5 | 97.6 | 181
+Musanze | 37.5 | 59.0 | 96.6 | 254
+Burera | 42.7 | 55.2 | 97.9 | 175
+Gicumbi | 38.1 | 55.0 | 93.1 | 222
+Rwamagana | 57.3 | 38.0 | 95.3 | 282
+Nyagatare | 36.1 | 57.0 | 93.1 | 426
+Gatsibo | 33.3 | 61.8 | 95.1 | 283
+Kayonza | 59.0 | 33.5 | 92.5 | 304
+Kirehe | 61.7 | 35.3 | 97.0 | 210
+Ngoma | 51.1 | 41.2 | 92.3 | 248
+Bugesera | 38.4 | 58.4 | 96.8 | 335
+Total | 45.6 | 49.5 | 95.1 | 7,323
+Appendix D: District Tables
+443
+### PAGE 482
+Table | D | .2 Fertility
+Total fertility rate for the 3 years preceding the survey, percentage of
+women aged 1 | 5 | â | 4 | 9 years currently pregnant, and mean number of children
+ever born to women aged 4 | 0 | â | 4 | 9 years, according to district, Rwanda DHS
+2025
+Percentage of
+women aged | Mean number of
+1 | 5 | â | 4 | 9 years | children ever
+currently | born to women
+District | Total fertility rate | pregnant | aged 4 | 0 | â | 4 | 9 years
+Nyarugenge | 2.5 | 6.1 | 3.4
+Gasabo | 3.4 | 3.8 | 3.8
+Kicukiro | 2.7 | 3.5 | 3.9
+Nyanza | 3.5 | 6.1 | 4.0
+Gisagara | 4.5 | 6.3 | 5.0
+Nyaruguru | 4.8 | 5.0 | 5.2
+Huye | 4.1 | 6.9 | 3.9
+Nyamagabe | 3.1 | 6.0 | 4.5
+Ruhango | 3.5 | 5.1 | 3.9
+Muhanga | 3.2 | 3.6 | 3.6
+Kamonyi | 3.5 | 5.0 | 3.9
+Karongi | 3.6 | 5.4 | 4.5
+Rutsiro | 3.4 | 5.6 | 4.8
+Rubavu | 3.8 | 4.5 | 5.3
+Nyabihu | 3.7 | 6.2 | 5.0
+Ngororero | 3.8 | 5.0 | 4.6
+Rusizi | 4.5 | 7.9 | 5.6
+Nyamasheke | 3.9 | 6.1 | 5.1
+Rulindo | 3.2 | 4.4 | 3.7
+Gakenke | 3.4 | 2.4 | 4.4
+Musanze | 3.8 | 4.3 | 4.5
+Burera | 3.1 | 5.7 | 5.0
+Gicumbi | 3.5 | 4.7 | 4.6
+Rwamagana | 4.0 | 4.6 | 4.3
+Nyagatare | 4.4 | 5.4 | 5.1
+Gatsibo | 3.8 | 5.4 | 4.8
+Kayonza | 4.0 | 5.7 | 5.1
+Kirehe | 3.7 | 4.6 | 5.1
+Ngoma | 4.2 | 6.8 | 5.0
+Bugesera | 4.0 | 4.9 | 4.8
+Total | 3.7 | 5.1 | 4.6
+Note: Total fertility rates are for the period | 1 | â | 3 | 6 months prior to interview.
+Appendix D: District Tables
+444
+### PAGE 483
+Table | D.3 | Current use of contraception
+Percent distribution of currently married women aged 1 | 5 | â | 4 | 9 years by contraceptive method currently used, according to district, Rwanda DHS 2025
+Modern method | Traditional method
+Emer | - | Any
+Any | Fe | male | Male | gency | tradi | - | Not cur | - | Num | ber
+Any | modern | sterili | - | sterili | - | Inject | - | Male con | - | Fe | male | con | tra | - | tional | With | - | rently | of wo | -
+District | method | method | zation | zation | IUD | ables | Implants | Pill | dom | con | dom | cep | tion | SDM | LAM | Other | method | Rhythm | drawal | Other | using | Total | m | en
+Nyarugenge | 61.7 | 57.4 | 0.5 | 0.0 | 7.0 | 14.6 | 22.1 | 10.0 | 1.9 | 0.0 | 0.0 | 1.2 | 0.0 | 0.0 | 4.2 | 3.2 | 1.1 | 0.0 | 38.3 | 100.0 | 207
+Gasabo | 68.6 | 63.1 | 1.4 | 0.2 | 5.8 | 18.4 | 28.6 | 4.6 | 2.9 | 0.4 | 0.0 | 0.5 | 0.5 | 0.0 | 5.4 | 3.1 | 2.2 | 0.2 | 31.4 | 100.0 | 548
+Kicukiro | 63.3 | 60.6 | 4.4 | 0.0 | 5.9 | 14.6 | 20.6 | 11.1 | 1.5 | 0.0 | 0.0 | 2.4 | 0.0 | 0.0 | 2.7 | 0.4 | 2.3 | 0.0 | 36.7 | 100.0 | 275
+Nyanza | 72.0 | 63.4 | 3.6 | 0.0 | 1.3 | 16.5 | 30.1 | 9.4 | 2.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 8.6 | 4.4 | 4.2 | 0.0 | 28.0 | 100.0 | 178
+Gisagara | 70.7 | 59.4 | 2.2 | 0.4 | 1.8 | 10.5 | 30.6 | 7.4 | 3.0 | 0.0 | 0.0 | 0.8 | 2.6 | 0.0 | 11.3 | 3.9 | 6.5 | 0.9 | 29.3 | 100.0 | 246
+Nyaruguru | 68.1 | 65.6 | 4.1 | 0.0 | 1.6 | 11.1 | 43.4 | 2.3 | 2.5 | 0.0 | 0.0 | 0.6 | 0.0 | 0.0 | 2.5 | 0.6 | 1.9 | 0.0 | 31.9 | 100.0 | 152
+Huye | 69.4 | 63.7 | 3.4 | 0.0 | 1.7 | 13.8 | 33.5 | 6.9 | 2.6 | 0.0 | 0.3 | 1.5 | 0.0 | 0.0 | 5.8 | 0.6 | 5.2 | 0.0 | 30.6 | 100.0 | 185
+Nyamagabe | 73.7 | 67.3 | 1.8 | 0.0 | 1.6 | 12.2 | 39.8 | 8.7 | 2.4 | 0.0 | 0.0 | 0.2 | 0.6 | 0.0 | 6.4 | 4.0 | 2.4 | 0.0 | 26.3 | 100.0 | 185
+Ruhango | 68.8 | 64.2 | 1.9 | 0.0 | 2.2 | 10.6 | 33.7 | 8.6 | 4.2 | 0.0 | 0.0 | 2.9 | 0.0 | 0.0 | 4.6 | 0.0 | 4.6 | 0.0 | 31.2 | 100.0 | 185
+Muhanga | 73.7 | 69.2 | 3.4 | 0.6 | 4.4 | 12.2 | 32.2 | 10.3 | 3.5 | 0.0 | 0.0 | 2.6 | 0.0 | 0.0 | 4.5 | 1.4 | 3.1 | 0.0 | 26.3 | 100.0 | 191
+Kamonyi | 68.1 | 60.4 | 2.4 | 0.0 | 4.9 | 13.4 | 25.5 | 10.5 | 2.1 | 0.0 | 0.0 | 1.3 | 0.3 | 0.0 | 7.7 | 2.1 | 5.6 | 0.0 | 31.9 | 100.0 | 272
+Karongi | 69.2 | 63.8 | 4.6 | 0.0 | 0.7 | 10.6 | 37.9 | 6.7 | 1.7 | 0.0 | 0.0 | 1.6 | 0.0 | 0.0 | 5.4 | 0.2 | 5.2 | 0.0 | 30.8 | 100.0 | 176
+Rutsiro | 70.6 | 63.2 | 2.4 | 0.5 | 0.5 | 14.5 | 37.8 | 3.4 | 2.6 | 0.0 | 0.0 | 0.5 | 0.9 | 0.0 | 7.5 | 1.8 | 5.7 | 0.0 | 29.4 | 100.0 | 214
+Rubavu | 65.7 | 60.6 | 2.2 | 0.0 | 1.0 | 17.5 | 33.3 | 5.2 | 0.9 | 0.0 | 0.4 | 0.0 | 0.3 | 0.0 | 5.1 | 2.2 | 2.9 | 0.0 | 34.3 | 100.0 | 345
+Nyabihu | 72.4 | 67.5 | 0.0 | 0.0 | 1.1 | 21.3 | 35.9 | 5.4 | 1.1 | 0.0 | 0.5 | 2.1 | 0.0 | 0.0 | 4.9 | 0.3 | 4.7 | 0.0 | 27.6 | 100.0 | 184
+Ngororero | 73.1 | 66.8 | 2.3 | 0.5 | 1.0 | 11.6 | 42.3 | 5.2 | 1.8 | 0.0 | 0.0 | 1.7 | 0.4 | 0.0 | 6.2 | 2.0 | 4.2 | 0.0 | 26.9 | 100.0 | 211
+Rusizi | 55.4 | 48.0 | 4.8 | 1.0 | 2.6 | 14.3 | 17.5 | 2.9 | 1.6 | 0.0 | 0.0 | 3.0 | 0.0 | 0.5 | 7.3 | 3.6 | 3.7 | 0.0 | 44.6 | 100.0 | 222
+Nyamasheke | 65.1 | 59.0 | 7.5 | 0.0 | 0.0 | 11.5 | 30.6 | 2.6 | 2.8 | 0.0 | 0.0 | 2.3 | 1.6 | 0.0 | 6.1 | 0.6 | 5.5 | 0.0 | 34.9 | 100.0 | 208
+Rulindo | 73.9 | 69.9 | 3.0 | 0.0 | 1.8 | 15.6 | 38.1 | 8.3 | 1.5 | 0.0 | 0.0 | 1.6 | 0.0 | 0.0 | 4.0 | 0.8 | 3.2 | 0.0 | 26.1 | 100.0 | 194
+Gakenke | 80.4 | 75.2 | 0.5 | 0.0 | 1.3 | 18.7 | 45.4 | 3.2 | 3.5 | 0.0 | 0.0 | 1.9 | 0.7 | 0.0 | 5.2 | 3.3 | 1.9 | 0.0 | 19.6 | 100.0 | 215
+Musanze | 70.1 | 64.1 | 0.0 | 0.0 | 2.3 | 11.5 | 41.6 | 6.0 | 1.0 | 0.0 | 0.0 | 1.7 | 0.0 | 0.0 | 6.0 | 3.9 | 2.1 | 0.0 | 29.9 | 100.0 | 289
+Burera | 81.3 | 78.8 | 1.8 | 0.0 | 1.1 | 7.4 | 62.1 | 4.7 | 1.3 | 0.0 | 0.0 | 0.4 | 0.0 | 0.0 | 2.4 | 1.1 | 1.3 | 0.0 | 18.7 | 100.0 | 223
+Gicumbi | 76.3 | 74.3 | 1.1 | 0.4 | 3.1 | 14.6 | 42.8 | 5.5 | 5.6 | 0.0 | 0.0 | 0.7 | 0.5 | 0.0 | 2.0 | 0.6 | 1.4 | 0.0 | 23.7 | 100.0 | 252
+Rwamagana | 66.8 | 63.0 | 0.7 | 0.4 | 1.9 | 14.9 | 35.2 | 6.2 | 2.4 | 0.0 | 0.3 | 0.9 | 0.0 | 0.0 | 3.8 | 0.0 | 3.8 | 0.0 | 33.2 | 100.0 | 298
+Nyagatare | 68.7 | 64.0 | 1.1 | 0.0 | 0.9 | 17.7 | 30.4 | 9.4 | 2.4 | 0.2 | 0.3 | 0.0 | 1.7 | 0.0 | 4.7 | 0.4 | 3.7 | 0.6 | 31.3 | 100.0 | 409
+Gatsibo | 73.2 | 67.7 | 1.6 | 0.0 | 2.9 | 17.0 | 31.1 | 8.3 | 3.1 | 0.0 | 0.0 | 1.8 | 1.9 | 0.0 | 5.5 | 2.3 | 3.2 | 0.0 | 26.8 | 100.0 | 297
+Kayonza | 64.6 | 59.0 | 2.8 | 0.0 | 2.1 | 13.3 | 29.7 | 6.5 | 3.4 | 0.0 | 0.4 | 0.8 | 0.0 | 0.0 | 5.7 | 1.3 | 4.3 | 0.0 | 35.4 | 100.0 | 297
+Kirehe | 67.5 | 64.4 | 1.0 | 0.5 | 0.2 | 9.4 | 48.7 | 2.5 | 1.7 | 0.0 | 0.0 | 0.6 | 0.0 | 0.0 | 3.1 | 0.5 | 2.6 | 0.0 | 32.5 | 100.0 | 231
+Ngoma | 74.1 | 70.7 | 5.7 | 0.0 | 1.8 | 11.8 | 41.0 | 6.8 | 1.8 | 0.0 | 0.0 | 1.3 | 0.5 | 0.0 | 3.5 | 1.9 | 1.6 | 0.0 | 25.9 | 100.0 | 220
+Bugesera | 63.1 | 60.8 | 2.4 | 0.0 | 2.2 | 16.7 | 30.2 | 7.5 | 1.5 | 0.0 | 0.0 | 0.0 | 0.4 | 0.0 | 2.2 | 0.4 | 1.8 | 0.0 | 36.9 | 100.0 | 302
+Total | 69.3 | 64.2 | 2.3 | 0.1 | 2.4 | 14.3 | 34.3 | 6.6 | 2.4 | 0.0 | 0.1 | 1.1 | 0.5 | 0.0 | 5.1 | 1.7 | 3.3 | 0.1 | 30.7 | 100.0 | 7,410
+Note: If more than one method is used, only the most effective method is considered in this tabulation.
+SDM = Standard days method | ; | LAM = Lactational amenorrhea method
+Appendix D: District Tables
+445
+### PAGE 484
+Table | D.4 | Nutritional status of children
+Percentage of children under age 5 classified as malnourished according to | 3 | anthropometric indices of child growth: height | - | for | - | age, weight | - | for | - | height, and weight | - | for | - | age, according to district, Rwanda DHS 2025
+1
+Height | - | for | - | age | Weight | - | for | - | height | Weight | - | for | - | age
+Percentage | Percentage | Mean | Percentage | Percentage | Percentage | Mean | Percentage | Percentage | Mean
+below | below | z | score | Number of | below | below | above | z | score | Number of | below | below | z | score | Number of
+2 | 2 | 2
+District | - | 3 SD | - | 2 SD | (SD) | children | - | 3 SD | - | 2 SD | +2 SD | (SD) | children | - | 3 SD | - | 2 SD | (SD) | children
+Nyarugenge | 1.9 | 8.7 | - | 0.6 | 179 | 0.0 | 0.5 | 2.1 | 0.3 | 179 | 0.5 | 5.0 | - | 0.1 | 179
+Gasabo | 2.6 | 16.0 | - | 0.8 | 550 | 0.3 | 0.8 | 5.0 | 0.4 | 550 | 0.3 | 6.4 | - | 0.2 | 550
+Kicukiro | 0.7 | 14.3 | - | 0.8 | 246 | 0.0 | 1.2 | 1.8 | 0.2 | 246 | 0.6 | 3.2 | - | 0.3 | 246
+Nyanza | 5.9 | 23.6 | - | 1.3 | 194 | 0.0 | 1.3 | 3.1 | 0.3 | 194 | 0.6 | 7.3 | - | 0.5 | 194
+Gisagara | 7.7 | 33.2 | - | 1.6 | 271 | 0.0 | 0.0 | 4.4 | 0.2 | 271 | 2.1 | 9.2 | - | 0.8 | 271
+Nyaruguru | 6.5 | 23.9 | - | 1.4 | 177 | 0.0 | 0.1 | 2.2 | 0.3 | 178 | 0.6 | 7.6 | - | 0.6 | 178
+Huye | 5.4 | 27.1 | - | 1.4 | 208 | 0.6 | 1.1 | 4.8 | 0.3 | 208 | 1.1 | 4.4 | - | 0.5 | 208
+Nyamagabe | 6.3 | 29.4 | - | 1.5 | 183 | 0.0 | 0.7 | 2.5 | 0.4 | 183 | 0.6 | 7.2 | - | 0.6 | 183
+Ruhango | 4.8 | 22.0 | - | 1.3 | 182 | 0.6 | 0.6 | 4.8 | 0.3 | 183 | 0.6 | 5.4 | - | 0.5 | 182
+Muhanga | 4.1 | 26.6 | - | 1.3 | 157 | 0.0 | 0.0 | 2.1 | 0.3 | 156 | 1.0 | 5.7 | - | 0.5 | 157
+Kamonyi | 3.7 | 21.1 | - | 1.2 | 250 | 0.7 | 1.6 | 6.8 | 0.4 | 250 | 1.8 | 6.7 | - | 0.4 | 251
+Karongi | 10.9 | 33.5 | - | 1.6 | 189 | 0.2 | 0.7 | 3.5 | 0.5 | 189 | 1.6 | 4.8 | - | 0.6 | 189
+Rutsiro | 9.5 | 33.8 | - | 1.6 | 199 | 0.0 | 2.2 | 4.4 | 0.4 | 199 | 0.0 | 8.9 | - | 0.6 | 199
+Rubavu | 9.6 | 33.1 | - | 1.5 | 355 | 0.0 | 0.6 | 9.2 | 0.7 | 353 | 0.3 | 5.6 | - | 0.4 | 355
+Nyabihu | 7.0 | 32.7 | - | 1.6 | 168 | 0.0 | 0.0 | 8.4 | 0.7 | 168 | 1.1 | 3.2 | - | 0.4 | 168
+Ngororero | 6.5 | 35.8 | - | 1.6 | 174 | 0.0 | 0.0 | 5.8 | 0.7 | 174 | 0.5 | 3.4 | - | 0.5 | 174
+Rusizi | 10.7 | 31.0 | - | 1.5 | 275 | 0.4 | 1.2 | 8.9 | 0.6 | 276 | 0.9 | 5.2 | - | 0.4 | 278
+Nyamasheke | 8.4 | 29.6 | - | 1.4 | 233 | 0.4 | 1.9 | 7.0 | 0.5 | 233 | 1.2 | 6.0 | - | 0.5 | 233
+Rulindo | 3.7 | 27.9 | - | 1.3 | 169 | 0.8 | 1.1 | 0.9 | 0.2 | 168 | 0.6 | 6.0 | - | 0.6 | 169
+Gakenke | 3.9 | 26.0 | - | 1.5 | 186 | 0.0 | 0.7 | 6.2 | 0.6 | 186 | 0.0 | 3.7 | - | 0.4 | 186
+Musanze | 4.5 | 31.9 | - | 1.5 | 255 | 0.0 | 0.0 | 7.4 | 0.8 | 255 | 0.0 | 2.7 | - | 0.3 | 255
+Burera | 10.1 | 37.6 | - | 1.7 | 174 | 0.0 | 0.0 | 3.6 | 0.7 | 174 | 0.0 | 4.2 | - | 0.5 | 174
+Gicumbi | 5.4 | 38.8 | - | 1.7 | 224 | 0.0 | 1.1 | 9.9 | 0.7 | 224 | 1.1 | 5.1 | - | 0.5 | 224
+Rwamagana | 5.7 | 19.2 | - | 1.1 | 280 | 0.0 | 1.1 | 5.0 | 0.3 | 280 | 1.6 | 6.2 | - | 0.4 | 281
+Nyagatare | 8.8 | 27.8 | - | 1.4 | 411 | 1.0 | 1.1 | 5.5 | 0.4 | 410 | 1.5 | 7.4 | - | 0.5 | 411
+Gatsibo | 9.1 | 29.4 | - | 1.4 | 294 | 0.4 | 0.8 | 4.9 | 0.3 | 296 | 0.2 | 5.8 | - | 0.6 | 295
+Kayonza | 7.4 | 26.1 | - | 1.4 | 308 | 0.0 | 0.8 | 6.1 | 0.3 | 308 | 0.9 | 7.3 | - | 0.6 | 308
+Kirehe | 6.7 | 31.7 | - | 1.5 | 216 | 0.0 | 0.2 | 3.2 | 0.3 | 216 | 0.5 | 8.8 | - | 0.7 | 216
+Ngoma | 8.5 | 26.9 | - | 1.5 | 245 | 0.0 | 1.1 | 1.3 | 0.2 | 245 | 1.9 | 12.4 | - | 0.7 | 245
+Bugesera | 4.5 | 20.8 | - | 1.1 | 341 | 0.3 | 2.2 | 5.0 | 0.3 | 341 | 0.3 | 4.7 | - | 0.4 | 341
+Total | 6.4 | 26.8 | - | 1.3 | 7,293 | 0.2 | 0.9 | 5.1 | 0.4 | 7,292 | 0.8 | 6.1 | - | 0.5 | 7,300
+Note: Each of the indices is expressed in standard deviation units (SD) from the median of the WHO Child Growth Standards.
+1
+Recumbent length is measured for children under age 2; standing height is measured for all other children.
+2
+Includes children who are below | - | 3 standard deviations (SD) from the WHO Child Growth standards population median
+Appendix D: District Tables
+446
+### PAGE 485
+Table | D.5 | Breastfeeding status according to age
+Among youngest children age | d | 0 | â | 5 | months living with their mother, percentage exclusively breastfeeding and percentage receiving
+mixed milk feeding; and among all children age | d | 1 | 2 | â | 2 | 3 months, percentage currently breastfeeding; and among all children age | d | 0 | â | 2 | 3
+months, percentage using a bottle with a nipple, according to district, Rwanda DHS 2025
+Among youngest children age | d | 0 | â | 5 | months | Among all children age | d | Among all children age | d
+living with their mother: | 1 | 2 | â | 2 | 3 months: | 0 | â | 2 | 3 months:
+Percentage | Percentage
+Percentage | receiving | currently | Percentage
+exclusively | mixed milk | Number of | breast | - | Number of | using a bottle | Number of
+1 | 2
+District | breast | feeding | feeding | children | feeding | children | with a nipple | children
+Nyarugenge | * | * | 21 | (79.7) | 28 | 10.0 | 73
+Gasabo | (86.5) | (7.8) | 46 | 88.6 | 108 | 10.7 | 221
+Kicukiro | * | * | 20 | (86.8) | 52 | 17.7 | 101
+Nyanza | * | * | 22 | (96.4) | 32 | 6.3 | 69
+Gisagara | * | * | 20 | 98.3 | 63 | 3.1 | 113
+Nyaruguru | * | * | 17 | (99.5) | 33 | 9.4 | 70
+Huye | * | * | 18 | (90.4) | 39 | 13.4 | 82
+Nyamagabe | * | * | 15 | (98.8) | 24 | 10.0 | 55
+Ruhango | (84.7) | (6.9) | 22 | (90.7) | 27 | 5.0 | 66
+Muhanga | (80.8) | (4.9) | 23 | (89.0) | 26 | 7.7 | 65
+Kamonyi | (66.2) | (6.9) | 34 | (75.5) | 46 | 17.4 | 103
+Karongi | * | * | 12 | (92.0) | 38 | 17.9 | 66
+Rutsiro | * | * | 14 | (93.5) | 38 | 2.7 | 74
+Rubavu | (85.1) | (1.8) | 38 | 90.0 | 68 | 3.8 | 135
+Nyabihu | * | * | 19 | (95.4) | 31 | 2.2 | 69
+Ngororero | (66.3) | (8.7) | 26 | (81.7) | 37 | 8.1 | 77
+Rusizi | (86.7) | (2.1) | 35 | (77.5) | 42 | 7.9 | 104
+Nyamasheke | (86.7) | (0.0) | 23 | (90.4) | 36 | 2.4 | 84
+Rulindo | * | * | 14 | (91.6) | 35 | 11.2 | 65
+Gakenke | * | * | 9 | (100.0) | 38 | 8.6 | 65
+Musanze | * | * | 19 | 96.8 | 57 | 0.9 | 107
+Burera | * | * | 18 | (93.0) | 35 | 0.0 | 64
+Gicumbi | * | * | 12 | (89.8) | 46 | 9.8 | 85
+Rwamagana | * | * | 25 | (89.3) | 51 | 9.6 | 115
+Nyagatare | (68.8) | (14.0) | 38 | 88.9 | 93 | 14.4 | 180
+Gatsibo | (81.5) | (0.0) | 40 | 90.9 | 55 | 12.0 | 117
+Kayonza | (90.1) | (6.9) | 36 | 89.2 | 61 | 7.7 | 112
+Kirehe | (67.3) | (5.8) | 25 | (89.2) | 47 | 5.6 | 90
+Ngoma | * | * | 17 | 87.0 | 56 | 18.9 | 102
+Bugesera | (86.9) | (4.0) | 32 | 82.5 | 62 | 8.9 | 129
+Total | 81.8 | 4.7 | 709 | 89.8 | 1,404 | 9.1 | 2,857
+Note: Breastfeeding status refers to a | â | 24 | - | hour | â | period (yesterday during the day or at night). Figures in parentheses are based on 2 | 5 | â | 4 | 9
+unweighted cases. An asterisk indicates that a figure is based on fewer than 25 unweighted cases and has been suppressed.
+1
+Received breast milk and infant formula and/or animal milk. Excludes yogurt drinks because they are generally not fed as a su | bstitute for
+breast milk. Excludes soy and nut milks.
+2
+Corresponds to IYCF indicator | â | Continued breastfeeding | â
+Appendix D: District Tables
+447
+### PAGE 486
+Table | D.6 | Micronutrient supplementation and deworming among children
+Among children age | d | 6 | â | 5 | 9 months, percentages who were given iron tablets or syrups, micronutrient powders, and iron | - | containing
+supplements in the last 12 months, and percentage who were given vitamin A supplements in the last 6 months; and among childr | en age | d
+1 | 2 | â | 5 | 9 months, percentage who were given deworming medication in the last 6 months, according to district, Rwanda DHS 2025
+Among children age | d
+Among children age | d | 6 | â | 5 | 9 months: | 1 | 2 | â | 5 | 9 months:
+Percentage | Percentage
+Percentage | Percentage | given iron | - | Percentage | given
+given iron | given multiple | containing | given vitamin | deworming
+tablets or | micronutrient | supplements | A supplements | medication in
+syrups in last | powders in last | in last 12 | in last 6 | Number of | last 6 | Number of
+1 | 1 | 1, | 2 | 3 | 1, | 4
+District | 12 months | 12 months | months | months | children | months | children
+Nyarugenge | 29.8 | 24.2 | 37.1 | 63.5 | 162 | 74.3 | 139
+Gasabo | 15.9 | 21.5 | 26.8 | 69.2 | 525 | 77.3 | 459
+Kicukiro | 53.9 | 27.3 | 60.0 | 77.1 | 238 | 80.2 | 209
+Nyanza | 74.3 | 46.9 | 80.5 | 84.7 | 158 | 86.0 | 144
+Gisagara | 5.7 | 38.8 | 41.4 | 87.0 | 240 | 84.4 | 210
+Nyaruguru | 46.4 | 60.0 | 71.4 | 67.8 | 143 | 83.3 | 125
+Huye | 7.7 | 26.3 | 28.6 | 70.8 | 181 | 77.7 | 155
+Nyamagabe | 60.5 | 37.7 | 75.3 | 77.6 | 146 | 95.9 | 130
+Ruhango | 36.2 | 37.0 | 49.2 | 82.0 | 151 | 86.8 | 135
+Muhanga | 60.6 | 42.7 | 70.0 | 77.8 | 119 | 84.9 | 104
+Kamonyi | 31.3 | 15.4 | 34.3 | 64.6 | 208 | 71.3 | 185
+Karongi | 23.6 | 32.5 | 34.9 | 77.4 | 163 | 86.8 | 147
+Rutsiro | 1.8 | 46.1 | 46.1 | 82.6 | 180 | 87.1 | 157
+Rubavu | 46.7 | 17.7 | 51.3 | 65.4 | 314 | 81.2 | 285
+Nyabihu | 27.8 | 32.6 | 45.8 | 79.6 | 144 | 78.6 | 126
+Ngororero | 24.7 | 27.7 | 36.0 | 80.7 | 140 | 83.3 | 128
+Rusizi | 31.3 | 34.8 | 44.6 | 81.9 | 233 | 89.8 | 207
+Nyamasheke | 5.9 | 19.2 | 21.0 | 81.5 | 196 | 83.9 | 171
+Rulindo | 21.7 | 16.8 | 30.9 | 79.8 | 150 | 80.8 | 133
+Gakenke | 37.5 | 53.5 | 67.8 | 75.7 | 172 | 83.6 | 153
+Musanze | 27.0 | 26.0 | 29.1 | 65.0 | 232 | 79.6 | 201
+Burera | 19.3 | 21.5 | 28.2 | 77.7 | 148 | 89.1 | 138
+Gicumbi | 43.9 | 37.0 | 48.5 | 72.6 | 205 | 83.5 | 179
+Rwamagana | 45.4 | 28.3 | 57.5 | 83.8 | 247 | 89.6 | 208
+Nyagatare | 14.8 | 23.4 | 26.4 | 63.2 | 364 | 69.4 | 317
+Gatsibo | 23.3 | 28.8 | 37.5 | 84.8 | 229 | 72.3 | 206
+Kayonza | 17.7 | 33.8 | 37.7 | 67.6 | 250 | 70.2 | 235
+Kirehe | 55.8 | 39.1 | 62.8 | 79.4 | 189 | 69.8 | 171
+Ngoma | 17.9 | 29.2 | 38.3 | 69.9 | 219 | 71.0 | 189
+Bugesera | 37.3 | 34.5 | 39.4 | 70.9 | 294 | 77.0 | 259
+Total | 29.9 | 30.6 | 43.1 | 74.4 | 6,338 | 80.0 | 5,603
+1
+Based on mother | â | s recall.
+2
+Iron | - | containing supplements includes tablets, syrup, or micronutrient powders.
+3
+Based on both mother | â | s recall and the vaccination card (where available).
+4
+Deworming for intestinal parasites is commonly done for helminths and schistosomiasis.
+5
+Information available for children age | d | 0 | â | 3 | 5 months only
+Appendix D: District Tables
+448
+### PAGE 487
+Table | D.7 | .1 Nutritional status of women aged 2 | 0 | â | 4 | 9 years
+Among women aged 2 | 0 | â | 4 | 9 years, percentage with height below 145 cm, mean body mass index (BMI), and percentage with specific BMI levels, according | to district, Rwanda DHS
+2025
+1
+Short stature | Body Mass Index
+<17
+Height | Mean body | 18. | 5 | â | 2 | 4.9 | (moderately | â¥ | 25.0 (total
+below | Number of | mass index | (total | <18.5 (total | 17. | 0 | â | 1 | 8.4 | or severely | overweight | 25. | 0 | â | 2 | 9.9 | â¥ | 30.0 | Number of
+District | 145 cm | women | (BMI) | normal) | thin) | (mildly thin) | thin) | or obese) | (overweight) | (obese) | women
+Nyarugenge | 2.1 | 201 | 26.3 | 38.7 | 5.1 | 5.1 | 0.0 | 56.2 | 33.8 | 22.4 | 181
+Gasabo | 1.3 | 469 | 26.1 | 47.2 | 2.1 | 2.1 | 0.0 | 50.7 | 28.2 | 22.5 | 439
+Kicukiro | 2.0 | 253 | 25.5 | 48.3 | 3.6 | 1.4 | 2.2 | 48.0 | 29.0 | 19.1 | 239
+Nyanza | 4.0 | 144 | 23.5 | 67.5 | 5.9 | 5.1 | 0.8 | 26.6 | 19.5 | 7.0 | 134
+Gisagara | 1.9 | 172 | 22.2 | 70.9 | 11.6 | 8.1 | 3.4 | 17.5 | 15.5 | 2.0 | 161
+Nyaruguru | 4.7 | 116 | 22.5 | 78.6 | 6.2 | 5.4 | 0.8 | 15.2 | 13.8 | 1.4 | 103
+Huye | 3.7 | 140 | 23.4 | 62.6 | 10.5 | 7.9 | 2.6 | 26.9 | 20.9 | 6.0 | 130
+Nyamagabe | 1.8 | 144 | 23.4 | 70.0 | 3.1 | 2.3 | 0.8 | 26.9 | 21.6 | 5.3 | 133
+Ruhango | 2.9 | 149 | 22.4 | 70.1 | 11.1 | 6.7 | 4.4 | 18.9 | 15.9 | 3.0 | 141
+Muhanga | 0.4 | 147 | 23.7 | 68.3 | 4.4 | 3.6 | 0.8 | 27.3 | 19.8 | 7.5 | 139
+Kamonyi | 3.4 | 216 | 24.6 | 55.1 | 5.5 | 4.4 | 1.1 | 39.4 | 26.2 | 13.2 | 203
+Karongi | 1.5 | 132 | 22.8 | 72.2 | 4.4 | 3.4 | 0.9 | 23.4 | 22.5 | 0.9 | 123
+Rutsiro | 5.3 | 151 | 23.3 | 75.4 | 2.2 | 0.8 | 1.5 | 22.4 | 19.0 | 3.3 | 136
+Rubavu | 1.6 | 271 | 25.5 | 49.2 | 3.5 | 2.5 | 1.0 | 47.4 | 31.5 | 15.9 | 249
+Nyabihu | 2.8 | 140 | 24.7 | 55.4 | 0.8 | 0.8 | 0.0 | 43.9 | 35.0 | 8.9 | 125
+Ngororero | 2.3 | 148 | 23.7 | 72.3 | 0.9 | 0.9 | 0.0 | 26.8 | 22.7 | 4.1 | 137
+Rusizi | 2.7 | 174 | 24.4 | 59.6 | 3.1 | 3.1 | 0.0 | 37.3 | 25.5 | 11.8 | 150
+Nyamasheke | 1.4 | 165 | 23.7 | 64.9 | 5.3 | 5.3 | 0.0 | 29.8 | 26.1 | 3.7 | 155
+Rulindo | 1.8 | 151 | 23.4 | 69.7 | 2.2 | 1.5 | 0.7 | 28.1 | 20.8 | 7.3 | 141
+Gakenke | 3.9 | 168 | 23.4 | 75.1 | 2.3 | 2.3 | 0.0 | 22.6 | 17.8 | 4.8 | 162
+Musanze | 0.0 | 204 | 25.0 | 60.0 | 1.0 | 1.0 | 0.0 | 38.9 | 27.3 | 11.6 | 193
+Burera | 1.3 | 148 | 24.1 | 63.1 | 3.4 | 3.4 | 0.0 | 33.5 | 27.6 | 5.9 | 132
+Gicumbi | 0.0 | 165 | 23.4 | 71.6 | 3.8 | 3.8 | 0.0 | 24.6 | 17.9 | 6.6 | 150
+Rwamagana | 3.1 | 215 | 24.5 | 58.7 | 4.7 | 3.3 | 1.5 | 36.6 | 25.8 | 10.8 | 203
+Nyagatare | 1.6 | 297 | 25.3 | 55.4 | 2.7 | 1.6 | 1.0 | 41.9 | 23.5 | 18.4 | 271
+Gatsibo | 3.7 | 209 | 23.9 | 67.8 | 2.1 | 2.1 | 0.0 | 30.1 | 18.9 | 11.2 | 197
+Kayonza | 2.7 | 214 | 24.3 | 59.0 | 5.0 | 3.1 | 2.0 | 35.9 | 25.0 | 11.0 | 198
+Kirehe | 1.4 | 161 | 23.8 | 69.3 | 2.7 | 2.5 | 0.2 | 28.0 | 20.0 | 8.0 | 148
+Ngoma | 4.3 | 161 | 23.4 | 66.1 | 4.9 | 4.9 | 0.0 | 29.0 | 21.9 | 7.1 | 144
+Bugesera | 1.4 | 233 | 24.8 | 58.5 | 1.6 | 1.6 | 0.0 | 39.9 | 28.1 | 11.7 | 221
+Total 2 | 0 | â | 4 | 9 | 2.2 | 5,659 | 24.3 | 61.2 | 4.0 | 3.1 | 0.8 | 34.9 | 24.1 | 10.7 | 5,237
+2
+Note: Body | m | ass | i | ndex (BMI) is expressed as the ratio of weight in kilograms to the square of height in meters (kg/m | ) | for adults age | d | 2 | 0 | â | 4 | 9 | years | .
+1
+Excludes pregnant women and women with a birth in the preceding 2 months
+Appendix D: District Tables
+449
+### PAGE 488
+Table | D.7 | .2 Nutritional status of adolescent women aged 1 | 5 | â | 1 | 9 years
+Among women aged 1 | 5 | â | 1 | 9 years, percentage with height | - | for | - | age below | - | 2 standard deviations (SD), mean body mass index (BMI) for age | z | score | , and percentage with specific
+BMI | - | for | - | age levels, according to | district | , Rwanda DHS 2025
+1
+Short stature | Body mass index | - | for | - | age
+Height | - | - | 1 SD to | < | - | 1 SD to | < | - | 2 SD | > +1 SD | > +1 SD to
+for | - | age | Mean | +1 SD | < | - | 1 SD | - | 2 SD | (moderately | (total | +2 SD
+below | Number of | BMI | - | for | - | age | (total | (total | (mildly | or severely | overweight | (over | - | > +2 SD | Number of
+2 | 3
+District | - | 2 SD | women | z | score | normal) | thin) | thin) | thin) | or obese) | weight) | (obese) | women
+Nyarugenge | (7.5) | 32 | 0.4 | (83.8) | (3.5) | (3.5) | (0.0) | (12.7) | (8.8) | (3.9) | 28
+Gasabo | 11.7 | 113 | 0.4 | 66.7 | 7.3 | 5.6 | 1.7 | 26.0 | 23.6 | 2.5 | 112
+Kicukiro | 5.5 | 61 | 0.5 | 76.3 | 2.5 | 2.5 | 0.0 | 21.2 | 14.5 | 6.8 | 61
+Nyanza | (13.8) | 37 | 0.1 | (78.2) | (5.6) | (5.6) | (0.0) | (16.2) | (12.8) | (3.4) | 36
+Gisagara | 14.0 | 55 | 0.2 | 81.1 | 10.3 | 10.3 | 0.0 | 8.6 | 8.3 | 0.3 | 52
+Nyaruguru | (7.0) | 41 | 0.2 | (71.3) | (8.8) | (8.8) | (0.0) | (19.9) | (19.9) | (0.0) | 41
+Huye | (3.2) | 43 | 0.2 | (72.0) | (8.6) | (8.6) | (0.0) | (19.4) | (17.3) | (2.1) | 41
+Nyamagabe | (10.1) | 33 | - | 0.0 | (62.8) | (20.9) | (17.5) | (3.4) | (16.3) | (10.8) | (5.5) | 31
+Ruhango | (11.1) | 38 | - | 0.0 | (85.1) | (5.3) | (5.3) | (0.0) | (9.7) | (9.7) | (0.0) | 37
+Muhanga | (4.7) | 35 | 0.4 | (86.6) | (0.0) | (0.0) | (0.0) | (13.4) | (13.4) | (0.0) | 34
+Kamonyi | (9.8) | 49 | 0.3 | (65.8) | (9.7) | (9.7) | (0.0) | (24.5) | (20.6) | (3.9) | 49
+Karongi | (21.3) | 30 | 0.3 | (79.1) | (6.7) | (6.7) | (0.0) | (14.3) | (10.2) | (4.0) | 30
+Rutsiro | (21.0) | 34 | - | 0.0 | (84.4) | (6.0) | (6.0) | (0.0) | (9.6) | (9.6) | (0.0) | 34
+Rubavu | (6.9) | 51 | 0.6 | (59.8) | (4.1) | (4.1) | (0.0) | (36.1) | (33.9) | (2.2) | 48
+Nyabihu | (16.3) | 29 | 0.3 | (62.6) | (14.3) | (14.3) | (0.0) | (23.1) | (23.1) | (0.0) | 27
+Ngororero | (10.1) | 41 | 0.3 | (84.1) | (2.5) | (2.5) | (0.0) | (13.5) | (13.5) | (0.0) | 40
+Rusizi | (19.6) | 39 | 0.1 | (86.1) | (4.5) | (4.5) | (0.0) | (9.4) | (9.4) | (0.0) | 39
+Nyamasheke | 15.4 | 52 | 0.2 | 74.4 | 10.5 | 8.4 | 2.1 | 15.1 | 14.4 | 0.6 | 52
+Rulindo | (11.9) | 30 | 0.3 | (83.0) | (1.5) | (1.5) | (0.0) | (15.5) | (14.1) | (1.5) | 30
+Gakenke | (13.9) | 43 | 0.6 | (71.2) | (0.0) | (0.0) | (0.0) | (28.8) | (26.2) | (2.6) | 43
+Musanze | 8.3 | 58 | 0.7 | 56.2 | 3.5 | 3.5 | 0.0 | 40.3 | 33.3 | 7.0 | 58
+Burera | (11.1) | 31 | 0.5 | (68.0) | (3.3) | (0.0) | (3.3) | (28.7) | (25.5) | (3.2) | 31
+Gicumbi | (11.0) | 42 | 0.3 | (68.3) | (5.2) | (5.2) | (0.0) | (26.5) | (26.5) | (0.0) | 41
+Rwamagana | 2.3 | 74 | 0.4 | 62.3 | 9.7 | 9.7 | 0.0 | 28.0 | 26.3 | 1.6 | 73
+Nyagatare | 13.9 | 97 | 0.4 | 62.3 | 9.5 | 9.5 | 0.0 | 28.2 | 24.0 | 4.1 | 94
+Gatsibo | 4.1 | 62 | 0.2 | 68.1 | 14.6 | 14.6 | 0.0 | 17.3 | 14.9 | 2.3 | 55
+Kayonza | 12.7 | 59 | 0.2 | 76.4 | 9.2 | 7.1 | 2.1 | 14.4 | 11.3 | 3.1 | 54
+Kirehe | 17.8 | 60 | 0.4 | 77.4 | 3.8 | 3.8 | 0.0 | 18.8 | 16.6 | 2.2 | 60
+Ngoma | 12.2 | 46 | 0.2 | 67.7 | 7.3 | 7.3 | 0.0 | 25.0 | 23.3 | 1.7 | 45
+Bugesera | 7.4 | 63 | 0.3 | 75.1 | 5.6 | 5.6 | 0.0 | 19.3 | 17.5 | 1.8 | 62
+Total 1 | 5 | â | 1 | 9 | 10.8 | 1,477 | 0.3 | 71.9 | 7.0 | 6.5 | 0.4 | 21.1 | 18.7 | 2.4 | 1,439
+Note: Height | - | for | - | age and body mass index (BMI) | - | for | - | age are expressed in standard deviation units (SD) from the median of the WHO Growth Reference for adolescent women age
+1 | 5 | â | 1 | 9. Figures in parentheses are based on 2 | 5 | â | 4 | 9 unweighted cases.
+1
+Excludes pregnant women and women with a birth in the preceding 2 months
+2
+Includes adolescent women age | d | 1 | 5 | â | 1 | 9 who are below | - | 2 standard deviations (SD) from the WHO Growth Reference population median
+3
+Includes adolescent women age | d | 1 | 5 | â | 1 | 9 who are above +2 standard deviations (SD) from the WHO Growth Reference population median
+Appendix D: District Tables
+450
+### PAGE 489
+Appendix
+PERSONS INVOLVED IN THE 2025 RWANDA
+E
+DEMOGRAPHIC AND HEALTH SURVEY
+National Survey Directors
+MURENZI Ivan
+MWIZERWA Jean Claude
+National Technical Directors
+BYIRINGIRO James
+NILINGIYIMANA Faustin
+NDAKIZE RUGAMBWA Michel
+Assistant Technical Directors
+ABALIKUMWE Francois
+IMANISHIMWE Valentine
+Provincial/District Coordinators
+BUMANZI Delphin | NIYOKWIZERWA Donathe
+HARELIMANA Massoud | NKURUNZIZA Venuste
+IMANISHIMWE Sandrine | NSHUTINABAGENZI Eric
+ISHIMWE Samuel | RUCAMIHIGO MUPENZI Issa
+MAZIMPAKA Jean Claude | RUKUNDO Ephrem
+MUGENZI Gilbert | SIBOMANA Jean Claude
+MUGISHA Herve Christian | UWAYEZU Beatrice
+NIYIGENA Eric
+Project Implementing Committees
+I. | Steering Committee
+Chairperson
+Dr | . | NSANZIMANA Sabin
+Vice chairperson
+BODIPO | - | MBUYAMBA Ana I.
+Secretary
+MURENZI Ivan
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+451
+### PAGE 490
+Members
+Dr. BUTERA Yvan | Dr. RWIBASIRA Gallican
+IYAKAREMYE Zachee | Prof. NTAKIRUTIMANA Theoneste
+KWABENA Asante Ntiamoah | HALINDIMANA Florien
+Prof. MAMBO Muvunyi Claude | Dr. BRENDA Asiimwe Kateera
+Dr. MUHAMMED Semakula | Dr. UWINKINDI Francois
+Dr. NTIHABOSE Corneille | RUTAYISIRE Robert
+Dr. MBITUYUMUREMYI Aimable | LINDSEY Julianna
+Dr. TUYISHIME Albert | Dr. CHIROMBO Brian
+Dr. MIGAMBI Patrick | DEPREZ Dirk
+NDAKIZE RUGAMBWA Michel | MUTERO William
+INGABIRE Assumpta | Dr. ASIIMWE Anitha
+Dr. | UWIMANA Aline | Dr. MUTWIWA Stephen
+Dr. MUKAGATARE Isabelle | BAGNOLI Andrea
+II. | Technical Advisory Committee
+NTAGARA NGABO Donatien | MACHARA Faustin
+TUBANE Emmanuel | KAYIGI Etienne
+Dr. CYIZA Regis Francois | Dr. UWANYILIGIRA Isabelle
+Dr. NDAHINDWA Vedaste | Dr. KATEERA Frederick
+Dr. SERUMONDO Janvier | Dr. MANZI Emmanuel
+OLUOCH Tom | Dr. GATERA Augustin
+Dr. IKUZO Basille | CURTI Nicole
+Dr. HADLEY Mary | SEBUTARE Elias
+GAJU Sylvie T. | MUNGAI Mercy
+Dr | . | RANGIRA Lambert | BUKI Ines
+Dr. HINDA Hassan | Dr. BAGANIZI Erick
+BERHE Atakilt | Dr. WILSON Randy
+KARANGWA Eugene | KAREMA Nadine
+III. | Technical Committee
+NDAKIZE RUGAMBWA Michel | NTAWUYIRUSHA Emmanuel
+BYIRINGIRO James | HABIMANA Innocent
+NILINGIYIMANA Faustin | MUNYANEZA Tharcisse
+IMANISHIMWE Valentine | BUTERA Jean de Dieu
+ABALIKUMWE Francois | SIBOMANA Hassan
+MUGENZI Glibert | TRAN NGOG Candida
+NSHIMIYIMANA Patrick | MUGABO Jules
+NSHUTINABAGENZI Eric | GATERA Augustin
+NKURUNZIZA Venuste | MUKANEZA Alice
+Dr | . | IKUZO Basile | MUNGUTI Kaendi
+NTAGARA NGABO Donatien | SEWASE Jessica
+TUBANE Emmanuel | MAJORO Juvenal
+NDAGIJIMANA Jean de Dieu | RUTAYISIRE Justin
+MUTSINDASHYAKA Theoneste | RUKUNDO Jean Claude
+NDAYAMBAJE Jean Bosco | BIZIMANA Benjamin
+KABANDA Robert
+Listing and Mapping Supervisors
+BIGIRIMANA Florent | MBANGUTSE Olivier
+NIYITEGEKA Beata | KARERA Albert
+MUNDERERE Theophile
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+452
+### PAGE 491
+Fieldwork Listing and Mapping Staff
+GAKWAYA Richard | NIZEYIMANA Modetse
+GATARAYIHA Aloys | NKURIYEKUBONA Assinapol
+HABIYAREMYE Evariste | NTEZIRIZAZA Theogene
+HAKORIMANA Eric | NYIRAMUHOZA ImmaculÃ©e
+ISEWASE Nasoro | NYIRANSHIMIYIMANA Falida
+ISHIMWE Clement | NYIRANTEZIMANA Consolee
+KABERA Jean Claude | NZABIHIMANA J. Chrysostome
+KANYARWANDA Emmanuel | RIBERA Alexis
+MICOMYIZA Dominique | RUKUNDO Jacqueline
+MUGABO Robert | SEBAHUNGU Pierre Celestin
+MUKABASEBYA Claudette | SIBOMANA Joseph
+MUKAKIBIBI Yvettte | TUMUSIIME Clever
+MURAMIRA Luc Michel | TUYISHIME Sylvie
+MUSABEMUNGU Issa | TWAGIRAYESU Jean Paul
+MUSHINZIMANA Emmanuel | UMUHOZA Alice
+MUZIRANENGE Alice | UMUTONIWASE Jacqueline
+MWENIMANA Joseph | UWAMAHORO Jacqueline
+NDUWAYO Clemence | UWAMAHORO Vestine
+NIYIGENA | S | olange | UWASE Mignone
+NIYONGABO Emile | UWERA Esperance
+Biomarker Technical Coordinators
+MUNYANEZA Tharcisse | RUTAYISIRE Robert
+BUTERA Jean de Dieu | KABALISA Emmanuel
+Dr | . | MUKAGATARE Isabelle | GASHEGU Misbah
+Biomarkers | f | or Sample Processing
+CYIZA Jolly Jean d | â | amour | MUTONIWASE Claudine
+DUSHIME Hyacentha | NIYITEGEKA Beatrice
+MUKESHIMANA Esperance
+Field | Lab | oratory | Technician | s
+BATAKARIZA Samantha | MUKUNDENTE Janviere
+BWESIGYE Assuman | MUKUNDENTE Monique
+BYUKUSENGE Carine | MUSABYIMANA Ami de Dieu
+CYURINYANA Jeannette | MUSENGIMANA Thabita
+DUSABE Cynthia Nuriati | MWEBAZE God
+DUSINGIZIMANA Jean Pierre | NASIBU Ferdinand
+GAHUNGU Ferdinand | NDIHOKUBWAYO Edison
+GAKUBA Marcel | NDIZIHIWE Gihozo Divine
+GAKUNDE Vedaste | NIRERE Diane
+GIKUNDIRO Thierry | NKUNZINEZA Hirwa Alice
+HAHIRWUSENGA P. Celestin | NTIRENGANYA Jean Claude
+HAKIZIMANA Egide | NYIRABANANIYE Christine
+INGABIRE Blandine | NYIRAMANA Marie Louise
+IRAKOZE Ornella | NYIRAMIRYANGO Claudine
+ISHIMWE Gloriose | NZABARINDA Jean Pierre
+ISHIMWE Jean Claude | RUBERANZIZA Leonce
+IZABAYO Nshuti Celine | RUKERAMIHIGO Christophe
+KIYOBE Anathalie | RURAMIRA Angelot
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+453
+### PAGE 492
+KOMEZUSENGE Jean Damascene | SELEMANI Jacques
+MAPENZI Carine | TUYISHIMIRE Aphrodice
+MUGENI Yvonne | UMUHOZA kevine
+MUHIRE Bernard | UMUKUNDWA Dalie
+MUHIRWA Emmanuel | UTAMURIZA Saphia
+MUHOZA Ange | UWIDUHAYE Vestine Tressy
+MUKAKIGERI Clementine
+Fieldwork T | eam | Leaders
+BIZIMANA Jean | MUKANDEKEZI DorothÃ©e
+HABIMANA Epimaque | MUKASEKURU FranÃ§oise
+HABUMUREMYI Serge | MUKESHIMANA Quessie
+HAKORIMANA Eric | NIYIGENA Solange
+ISHIMWE Clement | NKURIYEKUBONA Assinapol
+KABANDAHO Egide | NYIRANSENGIYUMVA Judith
+KABATSI Dative | NZABAKINGA P. | Clever
+MANZI Camille | UMUHOZA Alice
+MUKAGATERA JosÃ©e | UWABYAYE Odette
+MUKAMWIZA IlluminÃ©e | UWAMAHORO Vestine
+Fieldwork | Female I | nterviewers
+AKIRA Rachel | NYIRAHABIMANA Emma Marie
+BARIBEZA Solange | NYIRAMANA Monique
+BUCYANAYANDI ColÃ¨tte | NYIRAMUHOZA ImmaculÃ©e
+BUZIZI Kabahire Diane | NYIRANDUHURA Esperance
+DUSABEYEZU Domina | NYIRANEZA Alexia
+GAHONGAYIRE Sarah | NYIRANSHIMIYIMANA Falida
+GAHUNGA Nadia | NYIRANSHUTI Eugenie
+GASHAGAZA Liliane | NYIRANTEZIMANA ConsolÃ©e
+INGABILE Sylvie | RUKUNDO Jacqueline
+INGABIRE Vestine | RUSINE Valentine
+IRAKOZE Natacha | SIFA Minga Esperance
+KAMPORORO Liberathe | TUYISENGE Alice
+KAYITESI Jeannine | TUYISHIME Sylvie
+MPINGANZIMA Marie Solange | TWAMBAZIMANA M. Louise
+MUHIMPUNDU GisÃ¨le Bonne | UMUGWANEZA Stella
+MUJEJIMANA Jacqueline | UMUHOZA Olive
+MUKABAGANWA M. Claire | UMULISA Yseult
+MUKABASEBYA Claudette | UMURERWA Nadine
+MUKAKIBIBI Yvette | UMUTESI Liliane
+MUKANDAYISENGA Josiane | UMUTESI Marie Chantal
+MUKANDOLI Claudine | UMUTONIWASE Jacqueline
+MUKANDORI Clementine | UMWALI Vestine
+MUKANGOGA Esperance | USANASE Chantal
+MUKANTIYAMIRA Aliane | UWAMAHORO Jacqueline
+MUKARUGINA Petronille | UWAMAHORO Laetitia
+MUKESHIMANA Laurence | UWAMAHORO Vestine
+MUKINANYANA Nathalie | UWAMBAYIKIREZI Sabine
+MUKUNDUHIRWE Genevieve | UWAMBAYINEMA Dancille
+MUREKATETE ImmaculÃ©e | UWASE Claudine
+MUSHIMIYIMANA Evelyne | UWASE Mignone
+MUTESI Ronnah | UWERA Esperance
+MUZIRANENGE Alice | UWIMANA Claire
+NAMUKASA Hasha | UWIMANA Rachel
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+454
+### PAGE 493
+NDUWAYO Clemence | UWIMANA Vestine
+NIBAMUREKE Jacqueline | UWIMBABAZI Vanessa
+NIRERE Ange Rosine | UWINGABIRE M. Consolatrice
+NIYITEGEKA M. Grace | UWITIJE Christelle
+Fieldwork | Male | Interviewers
+BIMPENDA Jean Bosco | NSHIMIYUMUREMYI Eustache
+GAKWAYA Richard | NTEZIRIZAZA ThÃ©ogene
+GATARAYIHA Aloys | NYIRISHARA Emmanuel
+HABIYAREMYE Evariste | NZABIHIMANA J. Chrysostome
+MAKUZA Ghislais Guillain | RIBERA Alexis
+MICOMYIZA Dominique | SEBAHUNGU Pierre Celestin
+MUNYANEZA Thacien | SHUMBUSHO John William
+MURAMIRA Luc Michel | SIBOMANA Joseph
+NDAYISABA Edouard | TUYISENGE Amede
+NIYITEGEKA Sylvestre | TWAGIRUMUKIZA Jean Baptiste
+NKIRIHO David | UZABAKIRIHO Viateur
+NSENGIYUMVA Vincent
+Data Processing Team
+HARELIMANA Massoud | SHARANGABO Jean Jacques Faustin
+IRADUKUNDA Josue | TWIBAZE Joel
+NIYIGENA Eric | MUKASA Jimmy
+Analysts
+HONG Rathavuth | NKURUNZIZA Venuste
+ABALIKUMWE Francois | NSHUTINABAGENZI Eric
+BUMANZI Delphin | RUKUNDO Ephrem
+ICYITEGETSE Chance | SIBOMANA Jean Claude
+IMANISHIMWE Valentine | UWAMAHORO Pacifique
+ISHIMWE Samuel | UWAYEZU Beatrice
+MUGENZI Gilbert
+Proof | r | eading Team
+ABALIKUMWE Francois | NSHUTINABAGENZI Eric
+BUMANZI Delphin | RUKUNDO Ephrem
+ICYITEGETSE Chance | RUKUNDO Patrick
+IMANISHIMWE Valentine | SIBOMANA Jean Claude
+ISHIMWE Samuel | UWAMAHORO Pacifique
+KABANYANA Grace | UWAYEZU Beatrice
+MUGENZI Gilbert | NZEYIMANA Zephanie
+NKURUNZIZA Venuste
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+455
+### PAGE 494
+Administrative and Finance Team
+NKUSI David | TUYISHIME Elyse
+MUSERUKA David | UWINEZA Claudine
+MUNYEMANA Silas | NTAGERURA Jean Bosco
+UWIZEYE Richard | DUSHIMUMUKIZA Florence
+NSHIMIYUMUKIZA Steven | MURORA Alice
+NKURUNZIZA Godfrey
+Editors
+KALISA NEEMA Grace
+UWAMUNGU Thierry
+ICF
+BIZIMANA Jean de Dieu | R | EN | R | uili | n
+FISHEL Joy | MEDINA AVALOS Paulo
+NITIEMA Juste | BEHAGUE Sabina
+SANOU Oumar | CROFT Trevor
+GAYLORD Shonda | GRAMER Chris
+BEKELE Yodit | SHATTUCK Natalie
+ALLNUTT Annie | EDMON | D | SON Greg
+KOTHARI Monica | ARADHYA Kerry
+WINNER Michelle | HANNER Olsen
+Appendix | E | :
+Persons Involved in the 2025 Rwanda
+Demographic and Health Survey
+456
+### PAGE 495
+Appendix
+QUESTIONNAIRES
+F
+Appendix F: Questionnaires
+457
+### PAGE 496
+458

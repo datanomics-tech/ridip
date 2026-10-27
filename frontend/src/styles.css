@@ -13,6 +13,9 @@
   --t-finance_poverty: #1565c0;
   --t-agriculture: #2e7d32;
   --t-employment: #6a1b9a;
+  --t-health: #c62828;
+  --t-education: #ef6c00;
+  --t-transport: #00838f;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -73,6 +76,10 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .track-finance_poverty { border-top-color: var(--t-finance_poverty); }
 .track-agriculture { border-top-color: var(--t-agriculture); }
 .track-employment { border-top-color: var(--t-employment); }
+.track-health { border-top-color: var(--t-health); }
+.track-education { border-top-color: var(--t-education); }
+.track-transport { border-top-color: var(--t-transport); }
+.track-grid.two { grid-template-columns: repeat(2, 1fr); }
 .headline-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .headline { background: var(--bg); border-radius: 8px; padding: 10px; display: grid; gap: 2px; }
 .headline strong { font-size: 24px; color: var(--navy); }
@@ -170,7 +177,7 @@ table { border-collapse: collapse; width: 100%; background: #fff; }
 .about li { margin-bottom: 6px; line-height: 1.5; }
 
 @media (max-width: 960px) {
-  .track-grid, .need-grid { grid-template-columns: 1fr; }
+  .track-grid, .track-grid.two, .need-grid { grid-template-columns: 1fr; }
   .group-grid { grid-template-columns: 1fr; }
   .search { margin-left: 0; width: 100%; }
   .search input { width: 100%; }

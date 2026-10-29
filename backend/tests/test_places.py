@@ -14,7 +14,7 @@ def test_place_profile_has_three_tracks_and_insights():
     assert set(body["tracks"]) == {"agriculture", "finance_poverty", "employment", "health", "education", "transport"}
     poverty = next(i for i in body["tracks"]["finance_poverty"]["indicators"] if i["code"] == "poverty_rate")
     assert poverty["value"] == 36.4 and poverty["national"] == 27.4
-    assert poverty["significance"] == "significantly above"
+    assert poverty["difference_flag"] == "above"            # approximate 95% flag (EICV7 SEs)
     assert body["insights"] and body["group"]["name"].startswith("Group")
 
 
@@ -34,7 +34,7 @@ def test_overview_priorities_and_groups():
 
 def test_csv_downloads():
     report = client.get("/api/places/huye/report.csv")
-    assert report.status_code == 200 and report.text.startswith("district,track,indicator")
+    assert report.status_code == 200 and report.text.startswith("district,sector,indicator")
     assert len(report.text.strip().splitlines()) == 40
     data = client.get("/api/data.csv")
     assert data.status_code == 200 and len(data.text.strip().splitlines()) == 2491

@@ -42,18 +42,18 @@ export default function Compare({ a, b }: { a: string | null; b: string | null }
             <thead>
               <tr><th>Indicator</th><th><Link to={`/place/${pa.code}`}>{pa.name}</Link></th><th><Link to={`/place/${pb.code}`}>{pb.name}</Link></th><th>Rwanda</th></tr>
             </thead>
-            {DOMAIN_ORDER.map((d) => {
+            {DOMAIN_ORDER.filter((d) => d in pa.tracks && d in pb.tracks).map((d) => {
               const ta = pa.tracks[d], tb = pb.tracks[d];
               return (
                 <tbody key={d}>
-                  <tr className="section"><th colSpan={4}>{ta.title}: need score {ta.need === null ? "–" : Math.round(ta.need)} vs {tb.need === null ? "–" : Math.round(tb.need)}</th></tr>
+                  <tr className="section"><th colSpan={4}>{ta.title}: relative need {ta.need === null ? "not ranked" : Math.round(ta.need)} vs {tb.need === null ? "not ranked" : Math.round(tb.need)} (0–100, 100 = most need)</th></tr>
                   {ta.indicators.map((ia, n) => {
                     const ib = tb.indicators[n];
                     const aBetter = ia.direction === "higher" ? ia.value > ib.value : ia.value < ib.value;
                     const tie = ia.value === ib.value;
                     return (
                       <tr key={ia.code}>
-                        <td>{ia.name} <span className="muted small">({ia.year})</span></td>
+                        <td>{ia.name} <span className="muted small">({ia.unit}, {ia.year})</span></td>
                         <td className={!tie && aBetter ? "better" : undefined}>{fmt(ia.value, ia.unit)}</td>
                         <td className={!tie && !aBetter ? "better" : undefined}>{fmt(ib.value, ib.unit)}</td>
                         <td className="muted">{fmt(ia.national, ia.unit)}</td>
@@ -64,7 +64,7 @@ export default function Compare({ a, b }: { a: string | null; b: string | null }
               );
             })}
           </table>
-          <p className="muted small">Highlighted: the better of the two districts on each indicator.</p>
+          <p className="muted small">Highlighted: the better of the two districts on each indicator. Values are descriptive; years differ by survey and are shown per row.</p>
           <Link to={`/reports/new?place=${pa.code}&compare=${pb.code}`} className="button primary">Generate a report</Link>
         </div>
       ) : (

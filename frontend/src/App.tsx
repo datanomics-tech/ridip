@@ -1,6 +1,8 @@
 import Nav from "./Nav";
+import ServerBanner from "./ServerBanner";
 import { Link, useLocation } from "./router";
 import About from "./pages/About";
+import Brief from "./pages/Brief";
 import Compare from "./pages/Compare";
 import Explore from "./pages/Explore";
 import Home from "./pages/Home";
@@ -29,6 +31,7 @@ export default function App() {
     const domain = TRACKS[clean as keyof typeof TRACKS];
     page = <Explore key={domain} domain={domain} basePath={clean} indicator={params.get("i")} year={params.get("y")} place={params.get("place")} />;
   } else if (clean.startsWith("/place/")) page = <Place code={clean.slice(7)} tab={params.get("tab") ?? "overview"} />;
+  else if (clean.startsWith("/brief/")) page = <Brief code={clean.slice(7)} domain={params.get("domain")} />;
   else if (clean === "/compare") page = <Compare a={params.get("a")} b={params.get("b")} />;
   else if (clean === "/reports/new") page = <Report place={params.get("place")} compare={params.get("compare")} />;
   else if (clean === "/about") page = <About />;
@@ -37,6 +40,7 @@ export default function App() {
   return (
     <div className="layout">
       <Nav />
+      <ServerBanner />
       {page}
     </div>
   );

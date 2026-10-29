@@ -17,7 +17,7 @@ app = FastAPI(
     title="RIDIP API",
     description="Rwanda Integrated Data Intelligence Platform: NISR district indicators for agriculture, "
                 "finance & poverty and employment, with explainable need scores.",
-    version="0.3.0",
+    version="0.4.0",
 )
 
 
@@ -108,6 +108,28 @@ def csv_response(rows: list[dict], filename: str) -> StreamingResponse:
                              headers={"Content-Disposition": f'attachment; filename="{filename}"'})
 
 
+@app.get("/api/places/{code}/priority-brief")
+def priority_brief(code: str, domain: str) -> dict:
+    """Evidence-to-action brief for one district and sector: deterministic rules, each statement with its
+    rule id and evidence. For screening and discussion, not allocation."""
+    try:
+        result = analytics.priority_brief(code, domain)
+    except SQLAlchemyError:
+        raise unavailable("Indicator data")
+    if result is None:
+        raise HTTPException(status_code=404, detail=f"Unknown district or sector: {code}, {domain}")
+    return result
+
+
+@app.get("/api/method")
+def method() -> dict:
+    """Scoring method, exclusions, source years, verified targets and leave-one-indicator-out sensitivity."""
+    try:
+        return analytics.method_info()
+    except SQLAlchemyError:
+        raise unavailable("Indicator data")
+
+
 @app.get("/api/places/{code}/report.csv")
 def place_report(code: str) -> StreamingResponse:
     """Download a district profile as CSV."""
@@ -115,10 +137,11 @@ def place_report(code: str) -> StreamingResponse:
     rows = []
     for dom, track in profile["tracks"].items():
         for i in track["indicators"]:
-            rows.append({"district": profile["name"], "track": track["title"], "indicator": i["name"],
+            rows.append({"district": profile["name"], "sector": track["title"], "indicator": i["name"],
                          "year": i["year"], "value": i["value"], "unit": i["unit"], "rwanda": i["national"],
-                         "gap_to_rwanda": i["gap"], "rank_of_30": i["rank"], "significance": i["significance"] or "",
-                         "source": i["source"]})
+                         "gap_to_rwanda": i["gap"], "rank": i["rank"], "rank_of": i["rank_of"],
+                         "approx_95_difference_flag": i["difference_flag"] or "no standard error published",
+                         "value_type": i["value_type"], "source": i["source"], "source_url": i["source_url"]})
     return csv_response(rows, f"ridip-{code}-profile.csv")
 
 

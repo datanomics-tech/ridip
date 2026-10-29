@@ -195,3 +195,23 @@ table { border-collapse: collapse; width: 100%; background: #fff; }
   .report-doc { border: 0; padding: 0; }
   body, .layout { background: #fff; }
 }
+
+/* Final improvements: meaning notes, tags, targets, server banner, brief */
+.meaning { background: #fff8e1; border-left: 4px solid var(--gold); padding: 8px 12px; border-radius: 4px; color: #4a3b00; }
+.tag.neutral { background: #eef1f4; color: #3e4c59; margin-left: 6px; }
+.target { font-size: 13px; color: var(--green); margin: 4px 0; }
+.server-banner { padding: 10px 20px; background: #fff3cd; color: #5c4500; border-bottom: 1px solid #f0d58a; font-size: 14px; }
+.server-banner.down { background: #fdecea; color: var(--bad); border-color: #f5c2c0; }
+.field.start { max-width: 340px; margin: 0; }
+.field.inline { display: flex; align-items: center; gap: 8px; margin: 0; }
+.brief-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 16px; }
+.brief .purpose { margin-top: 8px; }
+.statements { padding-left: 18px; }
+.statements li { margin: 6px 0; }
+.rule { display: inline-block; font: 600 11px/1.6 ui-monospace, monospace; background: #e7eef7; color: var(--navy); padding: 0 6px; border-radius: 4px; margin-right: 6px; }
+dl.method { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
+dl.method dt { font-weight: 700; color: var(--navy); }
+dl.method dd { margin: 0; }
+@media (max-width: 560px) { dl.method { grid-template-columns: 1fr; } dl.method dd { margin-bottom: 8px; } .field.start { max-width: 100%; } }
+@media print { .server-banner { display: none; } }
+.doc-title { font-size: 2em; margin: 0.2em 0; }

@@ -152,6 +152,7 @@ export default function Explore({ domain, indicator, year, place, basePath }: Pr
               ))}
             </ul>
             <p className="muted small">Light = better off, dark red = most in need (fifths of the 30 districts).</p>
+            <p className="tag neutral">Year {yr} · {ready?.source}{ready?.value_type === "derived" ? " · derived" : ""}</p>
           </>
         )}
 

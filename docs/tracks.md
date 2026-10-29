@@ -1,8 +1,8 @@
 # Tracks, users and NST2 alignment
 
-RIDIP answers the challenge of each hackathon track with the same platform: one page per sector, one tab per sector in every district profile, and a need score that shows where to act first. Track 3 (Open Innovation) covers four sectors: employment, health, education and transport.
+RIDIP answers the challenge of each hackathon track with the same platform: one page per sector, one tab per sector in every district profile, and a relative-need score and a rules-based priority brief that show where to look first. Track 3 (Open Innovation) covers four sectors: employment, health, education and transport.
 
-NST2 targets below are as presented by the Government of Rwanda in September 2024 ([Office of the Prime Minister](https://primature.gov.rw/news-detail/prime-minister-presented-to-parliament-governments-five-year-program-nst2); [The New Times](https://www.newtimes.co.rw/article/19487/news/rwanda/unpacking-rwandas-five-year-development-strategy-here-are-the-14-goals/amp)).
+NST2 aims below are as presented by the Government of Rwanda in September 2024. Only the stunting target (33% → 15% by 2029) is confirmed in the official MINECOFIN NST2 presentation (January 2025) and shown as a number in the app; other figures come from the Prime Minister's presentation as reported in the press and are context only ([Office of the Prime Minister](https://primature.gov.rw/news-detail/prime-minister-presented-to-parliament-governments-five-year-program-nst2); [The New Times](https://www.newtimes.co.rw/article/19487/news/rwanda/unpacking-rwandas-five-year-development-strategy-here-are-the-14-goals/amp)).
 
 ## Track 1: Agricultural Productivity
 
@@ -25,7 +25,7 @@ NST2 targets below are as presented by the Government of Rwanda in September 202
 
 **Problem.** Poverty fell from 39.8% to 27.4% between 2017 and 2024, and in every district. But it is still above 40% in six districts, and only 22% of adults are banked, falling to 6% in Nyaruguru. Mobile money has driven formal inclusion to 92%, but access to bank services, smartphones and the internet remains uneven.
 
-**NST2 and Vision 2050 alignment.** Vision 2050 commits Rwanda to eradicating poverty. NST2 targets electricity and clean water for every household by 2029 and fully digital public services, which depend on connectivity.
+**NST2 and Vision 2050 alignment.** Vision 2050 commits Rwanda to eradicating poverty. NST2 aims for access to electricity in all cells and clean water for every household by 2029 and fully digital public services, which depend on connectivity.
 
 **Who uses it, for what decision**
 - MINECOFIN, LODA and district planners: where poverty reduction and social protection resources are most needed, and whether progress since 2017 is broad-based.
@@ -85,8 +85,8 @@ NST2 targets below are as presented by the Government of Rwanda in September 202
 
 | Criterion | How RIDIP addresses it |
 | --- | --- |
-| Problem understanding & relevance | One clear question per sector, tied to specific NST2 / Vision 2050 targets (above) |
-| Data use & methodology | Eight NISR sources, 39 indicators, 2,490 values; every value traceable to its table; standard errors and significance tests; reproducible pipeline and tests ([methodology](methodology.md)) |
-| Tech innovation | Explainable need scores, k-means district typology, statistical significance, automated insights, open API and CSV downloads |
+| Problem understanding & relevance | One clear question per sector, tied to NST2 / Vision 2050 aims (above); one verified national target shown in the app |
+| Data use & methodology | Eight NISR sources, 39 indicators, 2,490 values; every value traceable to its table; standard errors with an approximate 95% difference flag; leave-one-out sensitivity; reproducible pipeline and 22 tests ([methodology](methodology.md)) |
+| Tech innovation | Explainable relative-need scores with sensitivity ranges, rules-based priority briefs (no causal claims), k-means district typology, automated insights, open API and CSV downloads |
 | Usability & design | The wireflow journey: Home → Explore → District profile with sector tabs → Compare → Report; search; shareable links; works on phones |
 | Tangible impact | Priority districts per sector, district reports for planners and partners, and comparisons that point to similar districts |

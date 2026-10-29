@@ -1,4 +1,4 @@
-from functools import lru_cache
+import time
 
 from sqlalchemy import text
 
@@ -7,9 +7,24 @@ from app.db import engine
 META_COLUMNS = "code, domain, name, unit, direction, source, source_url, note, value_type"
 
 
-@lru_cache(maxsize=1)
+CACHE_SECONDS = 300
+_cache: dict = {"at": 0.0, "data": None}
+
+
 def load_all() -> tuple[dict, list[dict]]:
-    """All indicator metadata and values. Cached: the data only changes when the loader is rerun."""
+    """All indicator metadata and values, re-read from the database at most every 5 minutes,
+    so a rerun of the loader shows up without restarting the app."""
+    if _cache["data"] is None or time.monotonic() - _cache["at"] > CACHE_SECONDS:
+        _cache["data"] = _read()
+        _cache["at"] = time.monotonic()
+    return _cache["data"]
+
+
+def clear_cache() -> None:
+    _cache["data"] = None
+
+
+def _read() -> tuple[dict, list[dict]]:
     with engine.connect() as conn:
         meta = {r["code"]: dict(r) for r in conn.execute(text(f"SELECT {META_COLUMNS} FROM indicators ORDER BY position")).mappings()}
         values = [dict(r) for r in conn.execute(

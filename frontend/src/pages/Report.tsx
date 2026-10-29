@@ -3,6 +3,9 @@ import { api } from "../api";
 import { fmt, fmtGap } from "../format";
 import { Link, navigate } from "../router";
 import { DOMAIN_ORDER, type Domain, type Profile } from "../types";
+import { NEED_MEANING } from "./Place";
+
+const FLAG: Record<string, string> = { above: "Above Rwanda", below: "Below Rwanda", "no clear difference": "No clear difference" };
 
 export default function Report({ place, compare }: { place: string | null; compare: string | null }) {
   const [places, setPlaces] = useState<{ code: string; name: string }[]>([]);
@@ -60,6 +63,7 @@ export default function Report({ place, compare }: { place: string | null; compa
             <label className="check"><input type="radio" checked={format === "csv"} onChange={() => setFormat("csv")} /> CSV (spreadsheet)</label>
           </fieldset>
           <button type="button" className="button primary" disabled={!profile} onClick={generate}>Generate report</button>
+          {profile && <Link to={`/brief/${profile.code}?domain=finance_poverty`} className="button">Open a sector priority brief instead</Link>}
           {ready && <p className="ready" role="status">Report ready{format === "csv" ? ": the download has started." : ". Use the print dialog to save it as PDF."}</p>}
         </div>
       </div>
@@ -68,33 +72,34 @@ export default function Report({ place, compare }: { place: string | null; compa
         <article className="report-doc">
           <header>
             <p className="eyebrow">RIDIP district report · {today}</p>
-            <h1>{profile.name} District</h1>
+            <h2 className="doc-title">{profile.name} District</h2>
             <p className="muted">{profile.province} · {profile.group.name}: {profile.group.label}</p>
           </header>
           {sections.insights && (
             <section>
               <h2>Summary</h2>
-              <table className="report-table">
-                <thead><tr><th>Track</th><th>Need score (0–100)</th><th>Rank</th></tr></thead>
+              <div className="table-wrap"><table className="report-table">
+                <thead><tr><th>Sector</th><th>Relative need (0–100)</th><th>Rank</th><th>Rank if one indicator left out</th></tr></thead>
                 <tbody>
-                  {DOMAIN_ORDER.map((d) => {
+                  {DOMAIN_ORDER.filter((d) => d in profile.tracks).map((d) => {
                     const t = profile.tracks[d];
-                    return <tr key={d}><td>{t.title}</td><td>{t.need === null ? "Not ranked" : Math.round(t.need)}</td><td>{t.need_rank === null ? "–" : `${t.need_rank} of ${t.need_of}`}</td></tr>;
+                    return <tr key={d}><td>{t.title}</td><td>{t.need === null ? "Not ranked" : Math.round(t.need)}</td><td>{t.need_rank === null ? "–" : `${t.need_rank} of ${t.need_of}`}</td><td>{t.rank_range ? `${t.rank_range[0]}–${t.rank_range[1]}${t.rank_stable ? "" : " (sensitive)"}` : "–"}</td></tr>;
                   })}
                 </tbody>
-              </table>
+              </table></div>
+              <p className="meaning small">{NEED_MEANING}</p>
               <ul>{profile.insights.map((i, n) => <li key={n}>{i.text}</li>)}</ul>
             </section>
           )}
-          {DOMAIN_ORDER.filter((d) => sections[d]).map((d) => {
+          {DOMAIN_ORDER.filter((d) => sections[d] && d in profile.tracks).map((d) => {
             const t = profile.tracks[d];
             return (
               <section key={d}>
                 <h2>{t.title}</h2>
                 <p className="muted small">{t.nst2}</p>
-                <table className="report-table">
+                <div className="table-wrap"><table className="report-table">
                   <thead>
-                    <tr><th>Indicator</th><th>Year</th><th>{profile.name}</th>{other && <th>{other.name}</th>}<th>Rwanda</th><th>Difference</th></tr>
+                    <tr><th>Indicator</th><th>Year</th><th>{profile.name}</th>{other && <th>{other.name}</th>}<th>Rwanda</th><th>Difference</th><th>Approx. 95% flag</th><th>Source</th></tr>
                   </thead>
                   <tbody>
                     {t.indicators.map((i, n) => (
@@ -102,16 +107,20 @@ export default function Report({ place, compare }: { place: string | null; compa
                         <td>{i.name}</td><td>{i.year}</td><td>{fmt(i.value, i.unit)}</td>
                         {other && <td>{fmt(other.tracks[d].indicators[n].value, i.unit)}</td>}
                         <td>{fmt(i.national, i.unit)}</td><td>{fmtGap(i.gap, i.unit)}</td>
+                        <td>{i.difference_flag ? FLAG[i.difference_flag] : "Descriptive"}</td>
+                        <td>{i.source}{i.value_type === "derived" ? " (derived)" : ""}</td>
                       </tr>
                     ))}
                   </tbody>
-                </table>
+                </table></div>
               </section>
             );
           })}
           <footer className="small muted">
-            Sources: NISR EICV7 (2023/24), FinScope Rwanda 2024, Seasonal Agricultural Survey 2025, Labour Force Survey 2025.
-            Need scores are RIDIP calculations; see ridip.onrender.com/about.
+            All figures are published NISR statistics; the source and year are shown on each row, and years differ by survey.
+            "Approx. 95% flag" compares the district with Rwanda using published standard errors; "Descriptive" means no
+            standard error is published. Need scores are RIDIP calculations of relative need, not causal or predictive
+            measures; see ridip.onrender.com/about.
           </footer>
         </article>
       )}

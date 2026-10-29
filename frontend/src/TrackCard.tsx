@@ -26,7 +26,7 @@ export default function TrackCard({ domain, overview, headline }: Props) {
           );
         })}
       </div>
-      <h3>Priority districts</h3>
+      <h3>Highest relative need</h3>
       <ol className="priority">
         {t?.priority.map((p) => (
           <li key={p.code}>
@@ -34,6 +34,7 @@ export default function TrackCard({ domain, overview, headline }: Props) {
             <span className="need-pill" style={{ background: needColour(p.need), color: p.need >= 60 ? "#fff" : "#3b0d0d" }} title="Need score (0-100)">
               {Math.round(p.need)}
             </span>
+            {p.rank_stable === false && <span className="tag neutral" title="This district's rank moves more than 5 places if one indicator is left out">rank sensitive</span>}
           </li>
         ))}
       </ol>

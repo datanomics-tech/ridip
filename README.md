@@ -1,6 +1,6 @@
 # RIDIP: Rwanda Integrated Data Intelligence Platform
 
-**Live app: https://ridip.onrender.com** · [API documentation](https://ridip.onrender.com/docs) · [Methodology](docs/methodology.md) · [Tracks and NST2 alignment](docs/tracks.md)
+**Live app: https://ridip.onrender.com** · [API documentation](https://ridip.onrender.com/docs) · [Methodology](docs/methodology.md) · [Tracks and NST2 alignment](docs/tracks.md) · [Design diagrams](docs/diagrams/RIDIP_Design_Diagrams.pdf)
 
 RIDIP turns official NISR statistics into district decisions. For all 30 districts it brings together **39 indicators** across six sectors and the three hackathon tracks, compares each district with Rwanda, scores where need is greatest, and explains why in plain language.
 
@@ -73,6 +73,8 @@ Details: [docs/methodology.md](docs/methodology.md).
 All values can be downloaded from the app (`/api/data.csv`). How each file was processed is in [data/seed/README.md](data/seed/README.md).
 
 ## How it is built
+
+The design (user flow, wireflows, use cases, architecture, navigation, sequence and entity-relationship diagrams) is in [docs/diagrams/RIDIP_Design_Diagrams.pdf](docs/diagrams/RIDIP_Design_Diagrams.pdf). The current build implements the wireflow journey; sign-in, alerts and administration pages from the design are next steps.
 
 ```
 Browser (React + Leaflet) ──> FastAPI (Python) ──> PostgreSQL + PostGIS

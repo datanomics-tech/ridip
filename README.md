@@ -2,7 +2,7 @@
 
 **Live app: https://ridip.onrender.com** · [API documentation](https://ridip.onrender.com/docs) · [Methodology](docs/methodology.md) · [Tracks and NST2 alignment](docs/tracks.md) · [Design diagrams](docs/diagrams/RIDIP_Design_Diagrams.pdf) · [Priority advisor](docs/priority-advisor.md) · [Validation](docs/validation.md) · [Project guide](docs/project-guide.md)
 
-**Demo video:** _link to be added_
+**Demo video (2 min 45 s):** [`demo/RIDIP_demo.webm`](demo/RIDIP_demo.webm)
 
 RIDIP turns official NISR statistics into district decisions. For all 30 districts it brings together **39 indicators** across six sectors and the three hackathon tracks, compares each district with Rwanda, ranks relative need, explains which indicators drive it, and produces a rules-based priority brief for planners.
 
@@ -75,7 +75,7 @@ Details: [docs/methodology.md](docs/methodology.md).
 | District boundaries | [geoBoundaries](https://www.geoboundaries.org/) gbOpen RWA ADM2 (Open Data Rwanda / NISR), CC BY 4.0 | Map |
 | Base map | © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL | Map |
 
-All values can be downloaded from the app (`/api/data.csv`). How each file was processed is in [data/seed/README.md](data/seed/README.md).
+**Data in this repository:** [`data/seed/`](data/seed/) holds every value the app uses (`indicators.csv`, `indicator_values.csv`) with source notes. District boundaries are downloaded from geoBoundaries by `backend/scripts/load_districts.py`. The original NISR files are linked in the table above; they are not copied here because of their size. All values can also be downloaded from the app (`/api/data.csv`). How each file was processed is in [data/seed/README.md](data/seed/README.md).
 
 ## How it is built
 
@@ -147,6 +147,8 @@ backend/        FastAPI app, analytics, loading scripts and tests
 frontend/       React app (pages: home, explore, sector pages, open innovation, district profile, priority brief, compare, report, about)
 analytics/etl/  Scripts that build data/seed/ from the official NISR files
 data/seed/      Indicator tables loaded into the database, with source notes
+demo/           Demo video (RIDIP_demo.webm, under 3 minutes)
+eligibility/    Student cards / official documents confirming eligibility of both members
 database/       Database initialisation (PostGIS)
 docs/           Project guide, methodology, priority advisor, validation record and logs, improvements checklist, tracks and NST2 alignment, AI-use disclosure, diagrams
 Dockerfile      One container serving the API and the built app
